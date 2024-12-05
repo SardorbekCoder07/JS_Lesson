@@ -136,3 +136,15 @@
 // };
 
 // person.greet();
+
+// const person = {
+//     name: "Sardor",
+//     greet() {
+//         const innerFunction = () => {
+//             console.log(`Inner function: ${this.name}`);
+//         };
+//         innerFunction();
+//     },
+// };
+
+// person.greet(); 
