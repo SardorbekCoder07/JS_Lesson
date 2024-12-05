@@ -120,5 +120,19 @@
 //       console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 //     },
 //   };
-  
+
 //   person.greet(); 
+
+// const person = {
+//     name: "Sardor",
+//     greet() {
+//         console.log(`Outer function: ${this.name}`);
+//         let that=this; 
+//         function innerFunction() {
+//             console.log(`Inner function: ${that.name}`);
+//         }
+//         innerFunction();
+//     },
+// };
+
+// person.greet();
