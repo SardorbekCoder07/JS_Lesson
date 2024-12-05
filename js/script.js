@@ -100,3 +100,14 @@
 // for(let i of arr){
 //     console.log(i);
 // }
+
+// const person={
+//     firstName:"Sardorbek",
+//     birthYeah:2003,
+//     isDeveloper:true,
+//     calcAge:function(){
+//         return console.log(this,'---*------');
+//     }
+// }
+// console.log(person.calcAge());
+// console.log(this);
