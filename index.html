@@ -1,13 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
-</head>
-<body>
-    <h1>Assalomu alaykum</h1>
+    <title>Shopping Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .card button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <h3>Iphone 13</h3>
+            <p>$4000</p>
+            <button onclick="shop.found(1)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <h3>Iphone 14</h3>
+            <p>$5000</p>
+            <button onclick="shop.found(2)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <h3>Iphone 15</h3>
+            <p>$6000</p>
+            <button onclick="shop.found(3)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Product 4">
+            <h3>Iphone 16</h3>
+            <p>$7000</p>
+            <button onclick="shop.found(4)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Product 5">
+            <h3>Iphone 13 pro</h3>
+            <p>$3500</p>
+            <button onclick="shop.found(5)">Add to Cart</button>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
