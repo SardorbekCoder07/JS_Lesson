@@ -19,5 +19,6 @@
 // let a=false;
 // let b=true;
 // console.log(!b)
-
-
+// let a=true;
+// let b=false;
+// console.log(!(a || b) || !( a && b || !a && !b) && b);
