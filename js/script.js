@@ -71,3 +71,10 @@
 // let a = 10;
 // let b = 5;
 // console.log(`10 * 5 = ${a * b}`);
+
+// let ism = "Alibek";
+// let fan = "Matematika";
+// let vaqt = 6;
+
+// let xabar = `Assalamu alaykuum, ${ism}! Siz ${fan} fanini ${vaqt} oydan beri o‘rganmoqdasiz. Zo‘r ish!`;
+// console.log(xabar);
