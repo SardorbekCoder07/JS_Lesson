@@ -22,3 +22,6 @@
 // let a=true;
 // let b=false;
 // console.log(!(a || b) || !( a && b || !a && !b) && b);
+
+let a=Number(5);
+console.log(typeof a);
