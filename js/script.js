@@ -37,3 +37,33 @@
 // let b=0
 // let time="Hozirgi soat bizda "+ a+b;
 // console.log(time);
+
+// let ism = "Sardorbek";
+// let yosh = 21;
+// let salomlashish = `Asslamu alaykum, mening ismim ${ism} va men ${yosh} yoshdaman.`;
+// console.log(salomlashish);
+// let firstName=prompt("Ismingizni kiriting");
+// let lastName=prompt("Familiyangizni kiriting");
+// let age=prompt("Yoshingizni kiriting");
+// let city=prompt("Shahringizni kiriting");
+// let country=prompt("Millatningizni kiriting");
+// let phone=prompt("Telefon raqamingizni kiriting");
+// let email=prompt("Emailingizni kiriting");
+
+// let salomlashish=`Assalamu alaykum hurmatli ${firstName} ${lastName}. Sizning yoshingiz ${age}. Sizning tug'ilgan joyingiz ${country} davlati ${city} shahrida. Telefon raqamingiz ${phone}. Emailingiz ${email}.`;
+// alert(salomlashish)
+
+// let a = "sardorbek";
+// let salomlashish=`Assalamu alaykum
+//  hurmatli 
+// ${a}`;
+// console.log(salomlashish);
+
+
+// // Oddiy string bilan
+// let oddiyMatn = "Bu birinchi qatordir.\nBu ikkinchi qatordir.";
+// console.log(oddiyMatn);
+// // Template literal bilan
+// let koPqatOrliMatn = `Bu birinchi qatordir.
+// Bu ikkinchi qatordir.`;
+// console.log(koPqatOrliMatn);
