@@ -23,5 +23,17 @@
 // let b=false;
 // console.log(!(a || b) || !( a && b || !a && !b) && b);
 
-let a=Number(5);
-console.log(typeof a);
+// let a=Number(5);
+// console.log(typeof a);
+
+// console.log(a);
+// var a=5;
+
+// let ism = "Sardorbek";
+// let salomlashish = "Assalamu alaykum , " + ism + "!";
+// console.log(salomlashish);
+
+// let a =7;
+// let b=0
+// let time="Hozirgi soat bizda "+ a+b;
+// console.log(time);
