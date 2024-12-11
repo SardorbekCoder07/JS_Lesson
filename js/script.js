@@ -72,3 +72,38 @@
 //     },
 // };
 
+// let age=confirm("Yoshingiz 18 dan katta yoki 18 ga tengmi");
+// console.log(age);
+
+// if(age){
+//     alert("Sizga ruxsat beriladi");
+// }else{
+//     alert("Siz hali 18 dan kichik yoshdasiz shuning uchun biz sizga ruxsat bermadi");
+// }
+
+// let yosh = prompt("Yoshingizni kiriting");
+
+// if (yosh >= 18) {
+//   console.log("Sizga ruxsat beriladi.");  // Shart rost bo'lgani uchun bu ishga tushadi.
+// } else {
+//   console.log("Kirish taqiqlanadi.");
+// }
+
+// let installPin=prompt("Yangi parolni o'rnating");
+// let confirmPin=prompt("Parolni tasdiqlang");
+// if(installPin===confirmPin){
+//     alert("Parol muvaffaqqiyatli o'rnatildi")
+// }else{
+//     alert("parollar bir birga mos kelmadi!")
+// }
+
+// let recomendation=prompt("Yoshingizni kiriting");
+// if(recomendation>=18){
+//     document.write("Siz 18 yoshdan kattasi siz kuproq hayotiy kinolar kurishingizni tavsiya qilamiz")
+// }else if(recomendation>=15){
+//     document.write("Siz 15 yoshdan kattasi siz kuproq fantastik kinolar kurishingizni tavsiya qilamiz")
+// }else if(recomendation>=12){
+//     document.write("Siz 12 yoshdan kattasi siz kuproq multik kinolar kurishingizni tavsiya qilamiz")
+// }else{
+//     document.write("Hohlagan ishingizni qiling")
+// }
