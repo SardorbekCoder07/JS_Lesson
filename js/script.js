@@ -1,12 +1,14 @@
 // const product = {
 //     productArr: [
-//         { id: 1, productName: "Iphone 13", productPrice: "4000" },
-//         { id: 2, productName: "Iphone 14", productPrice: "5000" },
-//         { id: 3, productName: "Iphone 15", productPrice: "6000" },
-//         { id: 4, productName: "Iphone 16", productPrice: "7000" },
-//         { id: 5, productName: "Iphone 13 pro", productPrice: "3500" },
+//         { id: 1, productName: "Iphone 13", productPrice: 4000 },
+//         { id: 2, productName: "Iphone 14", productPrice: 5000 },
+//         { id: 3, productName: "Iphone 15", productPrice: 6000 },
+//         { id: 4, productName: "Iphone 16", productPrice: 7000 },
+//         { id: 5, productName: "Iphone 13 pro", productPrice: 3500 },
 //     ],
 //     totalPrice: 0,
+//     discountThreshold: 10000, // Qanchalik narxdan keyin chegirma bo‘ladi
+//     discountRate: 0.1, // 10% chegirma
 
 //     buy(productId) {
 //         // Mahsulotni qidirish
@@ -19,7 +21,7 @@
 //         }
 
 //         // Mahsulot narxini hisoblash va umumiy narxni yangilash
-//         this.totalPrice += Number(selectedProduct.productPrice);
+//         this.totalPrice += selectedProduct.productPrice;
 
 //         // Mahsulot haqida xabar
 //         alert(
@@ -29,27 +31,44 @@
 //         );
 
 //         // Umumiy narx haqida xabar
-//         alert(`Umumiy narx: ${this.formatCurrency(this.totalPrice)}`);
-
-//         // Konsolga loglash
-//         console.log(
-//             `Mahsulot: ${selectedProduct.productName}, Narxi: ${this.formatCurrency(
-//                 selectedProduct.productPrice
-//             )}, Umumiy narx: ${this.formatCurrency(this.totalPrice)}`
-//         );
+//         this.checkDiscount();
 //     },
 
-//     // Narxni valyuta formatiga o'zgartiruvchi yordamchi funksiya
+//     // Chegirma tekshirish
+//     checkDiscount() {
+//         if (this.totalPrice > this.discountThreshold) {
+//             const discount = this.calculateDiscount();
+//             const finalPrice = this.totalPrice - discount;
+
+//             alert(`Tabriklaymiz! Siz ${this.formatCurrency(discount)} chegirma oldingiz.`);
+//             alert(`Chegirmadan keyingi umumiy narx: ${this.formatCurrency(finalPrice)}`);
+//         } else {
+//             alert(`Umumiy narx: ${this.formatCurrency(this.totalPrice)}`);
+//         }
+//     },
+
+//     // Chegirma hisoblash
+//     calculateDiscount() {
+//         return this.totalPrice * this.discountRate;
+//     },
+
+//     // Xaridni yangidan boshlash
+//     reset() {
+//         if(this.totalPrice > 0){
+//             this.totalPrice = 0;
+//             alert("Xarid yangidan boshlandi!");
+//         }else{
+//             alert("Sizda hech narsa mavjud emas!");
+//         }
+//     },
+
+//     // Narxni valyuta formatiga o'zgartirish
 //     formatCurrency(price) {
-//         // return new Intl.NumberFormat("uz-UZ", {
-//         //     style: "currency",
-//         //     currency: "USD",
-//         // }).format(price);
-//         return new Intl.NumberFormat("ru-RU",{
-//             style:"currency",
-//             currency:"UZS",
-//         }).format(price)
+//         return new Intl.NumberFormat("uz-UZ", {
+//             style: "currency",
+//             currency: "USD",
+//             minimumIntegerDigits: 2,
+//         }).format(price);
 //     },
 // };
-
 
