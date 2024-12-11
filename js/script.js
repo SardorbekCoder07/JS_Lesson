@@ -107,3 +107,6 @@
 // }else{
 //     document.write("Hohlagan ishingizni qiling")
 // }
+// let role=prompt("Rolingizni kiriting?")
+// let docWrite=`${role==="student"?"Siz talabasiz":"Siz talaba emasiz"}`
+// document.write(docWrite)
