@@ -110,3 +110,7 @@
 // let role=prompt("Rolingizni kiriting?")
 // let docWrite=`${role==="student"?"Siz talabasiz":"Siz talaba emasiz"}`
 // document.write(docWrite)
+
+// let yosh = 19;
+// let xabar = yosh >= 18 ? "Kirish ruxsat" : "Kirish taqiqlangan";
+// console.log(xabar);  // Natija: Kirish taqiqlangan
