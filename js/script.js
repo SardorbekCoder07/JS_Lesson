@@ -114,3 +114,22 @@
 // let yosh = 19;
 // let xabar = yosh >= 18 ? "Kirish ruxsat" : "Kirish taqiqlangan";
 // console.log(xabar);  // Natija: Kirish taqiqlangan
+
+// let number=19;
+// console.log(number%2);
+
+// if(number%2===0){
+//     console.log(`${number} soni juft`);
+// }else{
+//     console.log(`${number} soni toq`);
+
+// }
+// let loginNumber = prompt("Telefon raqamingizni kiriting"),
+//     loginPassword = prompt("Parolni kiriting");
+// if (loginNumber === '+998942939449'&& loginPassword === 'root123') {
+//     console.log("Xush kelibsiz");
+// }else{
+//     console.log("Login yoki parol xato");
+// // }
+// console.log("5"+5);
+
