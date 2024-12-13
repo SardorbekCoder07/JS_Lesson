@@ -57,3 +57,8 @@
 // console.log(true * 1);     // 1
 // console.log(false * 1);    // 0
 // console.log("hello" + 1); 
+
+// let num = 5;
+// let str = "10";
+// let result = "5"+"10"; 
+// console.log(result, typeof result); 
