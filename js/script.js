@@ -27,8 +27,8 @@
 // console.log(Number(bool)); // 1
 // console.log(Number(invalidStr));
 
-let strInt = "123.45";
-let strFloat = "123.45abc";
+// let strInt = "123.45";
+// let strFloat = "123151651564165416541abc123.45abc";
 
-console.log(typeof parseInt(strInt)); // 123
-console.log(typeof parseFloat(strFloat)); // 123.45
+// console.log( parseInt(strInt)); // 123
+// console.log( parseFloat(strFloat)); // 123.45
