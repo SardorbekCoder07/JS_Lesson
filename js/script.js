@@ -62,3 +62,5 @@
 // let str = "10";
 // let result = "5"+"10"; 
 // console.log(result, typeof result); 
+
+// console.log(5 === "5");
