@@ -40,3 +40,11 @@
 // console.log(+str); // 456
 // console.log(+bool); // 0
 // console.log( +-NaN);
+
+let str = "789.56";
+let bool = true;
+
+console.log(typeof Math.floor(str)); // 789
+console.log(typeof Math.ceil(str)); // 790
+console.log(typeof Math.round(str)); // 790
+console.log(typeof Math.floor(bool));
