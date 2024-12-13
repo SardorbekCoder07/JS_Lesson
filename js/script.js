@@ -32,3 +32,11 @@
 
 // console.log( parseInt(strInt)); // 123
 // console.log( parseFloat(strFloat)); // 123.45
+
+// let str = "456";
+// let bool = false;
+// let invalidStr = "xyz";
+
+// console.log(+str); // 456
+// console.log(+bool); // 0
+// console.log( +-NaN);
