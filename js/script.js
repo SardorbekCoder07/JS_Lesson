@@ -64,3 +64,6 @@
 // console.log(result, typeof result); 
 
 // console.log(5 === "5");
+
+console.log(null == undefined); // true
+console.log(null === undefined); // false
