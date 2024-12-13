@@ -19,10 +19,10 @@
 // console.log(typeof `${a}`);
 
 
-let str = "123";
-let bool = true;
-let invalidStr = "abc";
+// let str = "123";
+// let bool = true;
+// let invalidStr = "abc";
 
-console.log(Number(str)); // 123
-console.log(Number(bool)); // 1
-console.log(Number(invalidStr));
+// console.log(Number(str)); // 123
+// console.log(Number(bool)); // 1
+// console.log(Number(invalidStr));
