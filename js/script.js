@@ -41,10 +41,19 @@
 // console.log(+bool); // 0
 // console.log( +-NaN);
 
-let str = "789.56";
-let bool = true;
+// let str = "789.56";
+// let bool = true;
 
-console.log(typeof Math.floor(str)); // 789
-console.log(typeof Math.ceil(str)); // 790
-console.log(typeof Math.round(str)); // 790
-console.log(typeof Math.floor(bool));
+// console.log(typeof Math.floor(str)); // 789
+// console.log(typeof Math.ceil(str)); // 790
+// console.log(typeof Math.round(str)); // 790
+// console.log(typeof Math.floor(bool));
+
+// console.log(typeof Number(null)); // 0
+// console.log(typeof Number(undefined)); 
+
+// console.log("123" * 1);    // 123
+// console.log("45.67" * 1);  // 45.67
+// console.log(true * 1);     // 1
+// console.log(false * 1);    // 0
+// console.log("hello" + 1); 
