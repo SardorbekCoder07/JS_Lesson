@@ -65,5 +65,11 @@
 
 // console.log(5 === "5");
 
-console.log(null == undefined); // true
-console.log(null === undefined); // false
+// console.log(null == undefined); // true
+// console.log(null === undefined); // false
+
+let x = "5";
+let y = 10;
+
+console.log(x + y); 
+console.log(Number(x) + y); 
