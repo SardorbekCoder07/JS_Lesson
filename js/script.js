@@ -68,8 +68,19 @@
 // console.log(null == undefined); // true
 // console.log(null === undefined); // false
 
-let x = "5";
-let y = 10;
+// let x = "5";
+// let y = 10;
 
-console.log(x + y); 
-console.log(Number(x) + y); 
+// console.log(x + y); 
+// console.log(Number(x) + y); 
+// const person={
+// 	firstName:"sardorbek"
+// }
+// console.log(person["firstName"])
+
+// console.log("JavaScript".charAt(4));
+
+console.log(typeof function() {
+	
+});
+
