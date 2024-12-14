@@ -79,8 +79,3 @@
 // console.log(person["firstName"])
 
 // console.log("JavaScript".charAt(4));
-
-console.log(typeof function() {
-	
-});
-
