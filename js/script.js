@@ -79,17 +79,92 @@
 // console.log(person["firstName"])
 
 // console.log("JavaScript".charAt(4));
-function arrayMin(arr) {
-  return arr.reduce(function (p, v) {
-    return ( p < v ? p : v );
-  });
-}
+// function arrayMin(arr) {
+//   return arr.reduce(function (p, v) {
+//     return ( p < v ? p : v );
+//   });
+// }
 
-function arrayMax(arr) {
-  return arr.reduce(function (p, v) {
-    return ( p > v ? p : v );
-  });
-}
+// function arrayMax(arr) {
+//   return arr.reduce(function (p, v) {
+//     return ( p > v ? p : v );
+//   });
+// }
 
-console.log(arrayMin([1, 2, 3, 4, 5]));
-console.log(arrayMax([1, 2, 3, 4, 5]));
+// console.log(arrayMin([1, 2, 3, 4, 5]));
+// console.log(arrayMax([1, 2, 3, 4, 5]));
+
+
+
+// Foydalanuvchilar ro'yxati
+// const users = [];
+
+// // 1. Yangi foydalanuvchini ro'yxatga qo'shish funksiyasi
+// function addUser(user) {
+//   // Email takrorlanmasligini tekshirish
+//   const existingUser = users.find((u) => u.email === user.email);
+//   if (existingUser) {
+//     console.log(`Foydalanuvchi ${user.email} email bilan allaqachon mavjud.`);
+//     return;
+//   }
+//   users.push(user);
+//   console.log(`Foydalanuvchi ${user.name} muvaffaqiyatli qo'shildi.`);
+// }
+
+// // 2. Foydalanuvchini email orqali o'chirish funksiyasi
+// function deleteUser(email) {
+//   const userIndex = users.findIndex((u) => u.email === email);
+//   if (userIndex !== -1) {
+//     const deletedUser = users.splice(userIndex, 1); // Foydalanuvchini o'chirish
+//     console.log(`Foydalanuvchi ${deletedUser[0].name} muvaffaqiyatli o'chirildi.`);
+//   } else {
+//     console.log(`Foydalanuvchi ${email} email bilan topilmadi.`);
+//   }
+// }
+
+// // 3. Foydalanuvchi ma'lumotlarini yangilash funksiyasi
+// function updateUser(email, newData) {
+//   const user = users.find((u) => u.email === email);
+//   if (user) {
+//     Object.assign(user, newData); // Foydalanuvchi ma'lumotlarini yangilash
+//     console.log(`Foydalanuvchi ${email} muvaffaqiyatli yangilandi.`);
+//   } else {
+//     console.log(`Foydalanuvchi ${email} email bilan topilmadi.`);
+//   }
+// }
+
+// // 4. Foydalanuvchilar ro'yxatini ko'rsatish funksiyasi
+// function listUsers() {
+//   if (users.length === 0) {
+//     console.log("Foydalanuvchilar ro'yxati bo'sh.");
+//     return;
+//   }
+
+//   console.log("Foydalanuvchilar ro'yxati:");
+//   users.forEach((user, index) => {
+//     console.log(`${index + 1}. Ism: ${user.name}, Yosh: ${user.age}, Email: ${user.email}`);
+//   });
+// }
+
+// // === Dasturdan foydalanish ===
+// // Yangi foydalanuvchilar qo'shish
+// addUser({ name: "Ali", age: 25, email: "ali@mail.com" });
+// addUser({ name: "Laylo", age: 30, email: "laylo@mail.com" });
+// addUser({ name: "Bek", age: 22, email: "bek@mail.com" });
+
+// // Takrorlanmaslik uchun tekshiruv
+// addUser({ name: "Ali", age: 26, email: "ali@mail.com" }); // Bu xato beradi
+
+// // Foydalanuvchilar ro'yxatini ko'rish
+// listUsers();
+
+// // Foydalanuvchini yangilash
+// updateUser("laylo@mail.com", { age: 31, name: "Laylo Mahmudova" });
+// listUsers();
+
+// // Foydalanuvchini o'chirish
+// deleteUser("bek@mail.com");
+// listUsers();
+
+// // Foydalanuvchini topa olmasa
+// deleteUser("nodir@mail.com");
