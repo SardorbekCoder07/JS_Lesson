@@ -79,3 +79,17 @@
 // console.log(person["firstName"])
 
 // console.log("JavaScript".charAt(4));
+function arrayMin(arr) {
+  return arr.reduce(function (p, v) {
+    return ( p < v ? p : v );
+  });
+}
+
+function arrayMax(arr) {
+  return arr.reduce(function (p, v) {
+    return ( p > v ? p : v );
+  });
+}
+
+console.log(arrayMin([1, 2, 3, 4, 5]));
+console.log(arrayMax([1, 2, 3, 4, 5]));
