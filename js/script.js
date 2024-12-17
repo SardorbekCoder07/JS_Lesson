@@ -35,12 +35,13 @@ const listUser=()=>{
 	console.table(user)
 }
 
-addUser({ name: 'ali', lastName: 'aliyev', email: 'ali@.com' })
+addUser({ name: 'ali', lastName: 'aliyev',password:"12345", email: 'ali@.com' })
 addUser({ name: 'vali', lastName: 'valiev', email: 'vali@.com' })
-addUser({ name: 'vali', lastName: 'valiev', email: 'vali@.com' })
+addUser({ name: 'vali', lastName: 'valiev', email: 'wwww@.com' })
 updateUser('vali@.com',{
 	name:"Valijon",
 	lastName:"Valijonov",
 	email:"valijon@gmail.com"
 })
+deleteUser('wwww@.com')
 listUser()
