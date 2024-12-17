@@ -10,3 +10,11 @@
 // const obj2 = { b:2, c: 4 };
 // const merged = Object.assign({}, obj1, obj2);
 // console.log(merged);
+// obj1.d=5;
+// console.log(obj1);
+
+Object.freeze(person);
+const person = { name: "Sardor", age: 25 };
+person.age = 30; 
+console.log(person.age);
+
