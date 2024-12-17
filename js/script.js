@@ -13,8 +13,28 @@
 // obj1.d=5;
 // console.log(obj1);
 
-Object.freeze(person);
-const person = { name: "Sardor", age: 25 };
-person.age = 30; 
-console.log(person.age);
 
+
+// const person = { name: "Sardor", age: 25 };
+// person.age = 30; 
+// Object.freeze(person);
+// person.age=45;
+// console.log(person.age);
+
+// const person = { name: "Sardor", age: 25 };
+// Object.seal(person);
+// person.age = 30; 
+// person.city = "Tashkent"; 
+// console.log(person); 
+
+// const entries = [["name", "Sardor"], ["age", 25], ["city", "Tashkent"]];
+// const obj = Object.fromEntries(entries);
+// console.log(obj);
+
+// const person = { name: "Sardor", age: 25 };
+// console.log(person.hasOwnProperty("name")); 
+// console.log(person.hasOwnProperty("city")); 
+
+	// console.log(Object.is(25, 25)); 
+	// console.log(Object.is(NaN, NaN));
+	// console.log(Object.is(0, -0)); 
