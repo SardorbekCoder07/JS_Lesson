@@ -1,40 +1,46 @@
-// const person = { name: "Sardor", age: 25, city: "Tashkent" }
-// console.log(Object.entries(person));
+let user = []//local baza bu yerda malumotlar vaqtinchalik saqlanadi!
 
-// const original = { name: "Sardor", age: 25 };
-// const clone = Object.assign({city:"Tashkent"},original);
-// console.log(clone);
+const addUser = (user_data) => {
+	const exist_user = user.find((req) => req.email === user_data.email)
+	if (exist_user) {
+		console.log(`Bu ${user_data.email} allaqachon ro'yxatdan o'tilgan `)
+		return
+	}
+	user.push(user_data)
+	console.log(`${user_data.name} ${user_data.lastName} muvaffaqqiyatli qushildi`)
+}
 
+const deleteUser = (email) => {
+	const delete_user = user.findIndex((req) => req.email === email)
+	if (delete_user !== -1) {
+		const deleted_user = user.splice(delete_user, 1)[0]
+		console.log(`${deleted_user.name} ${deleted_user.lastName} muvaffaqqiyatli o'chirildi`)
+	}else{
+		console.log(`Bu ${email} topilmadi!`);
+	}
+}
 
-// const obj1 = { a: 1, b: 5};
-// const obj2 = { b:2, c: 4 };
-// const merged = Object.assign({}, obj1, obj2);
-// console.log(merged);
-// obj1.d=5;
-// console.log(obj1);
+const updateUser = (email, newData) => {
+	const update_user = user.find((req) => req.email === email)
+	console.log(update_user);
+	
+	if(update_user){
+		Object.assign(update_user, newData)
+		console.log(`${update_user.name} ${update_user.lastName} muvaffaqqiyatli o'zgartirildi`)
+	}else{
+		console.log(`Bu ${email} topilmadi!`);
+	}
+}
+const listUser=()=>{
+	console.table(user)
+}
 
-
-
-// const person = { name: "Sardor", age: 25 };
-// person.age = 30; 
-// Object.freeze(person);
-// person.age=45;
-// console.log(person.age);
-
-// const person = { name: "Sardor", age: 25 };
-// Object.seal(person);
-// person.age = 30; 
-// person.city = "Tashkent"; 
-// console.log(person); 
-
-// const entries = [["name", "Sardor"], ["age", 25], ["city", "Tashkent"]];
-// const obj = Object.fromEntries(entries);
-// console.log(obj);
-
-// const person = { name: "Sardor", age: 25 };
-// console.log(person.hasOwnProperty("name")); 
-// console.log(person.hasOwnProperty("city")); 
-
-	// console.log(Object.is(25, 25)); 
-	// console.log(Object.is(NaN, NaN));
-	// console.log(Object.is(0, -0)); 
+addUser({ name: 'ali', lastName: 'aliyev', email: 'ali@.com' })
+addUser({ name: 'vali', lastName: 'valiev', email: 'vali@.com' })
+addUser({ name: 'vali', lastName: 'valiev', email: 'vali@.com' })
+updateUser('vali@.com',{
+	name:"Valijon",
+	lastName:"Valijonov",
+	email:"valijon@gmail.com"
+})
+listUser()
