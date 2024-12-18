@@ -1,5 +1,5 @@
 // console.log(5 === '5');  // false (string va number mos emas)
-// console.log(true === 1);  // false (boolean va number mos emas)
+// console.log(true !== 1);  // false (boolean va number mos emas)
 // console.log(false === 0);  // false (boolean va number mos emas)
 // console.log(null === undefined);  // false (turli xil qiymatlar)
 // console.log('' === 0);  // false (string va number mos emas)
