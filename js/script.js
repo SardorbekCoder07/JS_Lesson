@@ -1,47 +1,16 @@
-let user = []//local baza bu yerda malumotlar vaqtinchalik saqlanadi!
-
-const addUser = (user_data) => {
-	const exist_user = user.find((req) => req.email === user_data.email)
-	if (exist_user) {
-		console.log(`Bu ${user_data.email} allaqachon ro'yxatdan o'tilgan `)
-		return
-	}
-	user.push(user_data)
-	console.log(`${user_data.name} ${user_data.lastName} muvaffaqqiyatli qushildi`)
-}
-
-const deleteUser = (email) => {
-	const delete_user = user.findIndex((req) => req.email === email)
-	if (delete_user !== -1) {
-		const deleted_user = user.splice(delete_user, 1)[0]
-		console.log(`${deleted_user.name} ${deleted_user.lastName} muvaffaqqiyatli o'chirildi`)
-	}else{
-		console.log(`Bu ${email} topilmadi!`);
-	}
-}
-
-const updateUser = (email, newData) => {
-	const update_user = user.find((req) => req.email === email)
-	console.log(update_user);
-	
-	if(update_user){
-		Object.assign(update_user, newData)
-		console.log(`${update_user.name} ${update_user.lastName} muvaffaqqiyatli o'zgartirildi`)
-	}else{
-		console.log(`Bu ${email} topilmadi!`);
-	}
-}
-const listUser=()=>{
-	console.table(user)
-}
-
-addUser({ name: 'ali', lastName: 'aliyev',password:"12345", email: 'ali@.com' })
-addUser({ name: 'vali', lastName: 'valiev', email: 'vali@.com' })
-addUser({ name: 'vali', lastName: 'valiev', email: 'wwww@.com' })
-updateUser('vali@.com',{
-	name:"Valijon",
-	lastName:"Valijonov",
-	email:"valijon@gmail.com"
-})
-deleteUser('wwww@.com')
-listUser()
+// console.log(5 === '5');  // false (string va number mos emas)
+// console.log(true === 1);  // false (boolean va number mos emas)
+// console.log(false === 0);  // false (boolean va number mos emas)
+// console.log(null === undefined);  // false (turli xil qiymatlar)
+// console.log('' === 0);  // false (string va number mos emas)
+// console.log(5 === 5);  // true (bir xil qiymat va tur)
+// console.log(Symbol(5)===Symbol(5));
+// const obj={
+// 	name:'John',
+// 	age:5
+// }
+// const obj2={
+// 	name:'John',
+// 	age:5
+// }
+// console.log(obj.age===obj2.age);
