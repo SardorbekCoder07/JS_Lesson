@@ -35,3 +35,26 @@
 // if (isLoggedIn === true) {
 //   console.log("Bu qism ishlamaydi.");  // false, chunki 1 va true turli tiplar.
 // }
+
+
+// console.log(null == undefined); //true 
+// console.log(null === undefined); // false
+// console.log(null != undefined);   //false
+// console.log(null !== undefined); //true
+// console.log('5' == 5);    //true
+// console.log('5' === 5);   //false
+// console.log('0' == false); //true
+// console.log('0' === false);//false
+// console.log(1 == true);    //true
+// console.log(1 === true);   //false
+// console.log(0 == false);   //true
+// console.log(0 === false);//false
+// console.log('true' == true); //true
+// console.log('false' == false); //true
+// console.log('true' === true); //falsw
+// console.log('' == false);   //true
+// console.log('' === false);  //false
+// console.log(NaN == NaN);   //true
+// console.log(BigInt(4) === BigInt(4))  //false
+// console.log(NaN != NaN);   //true
+// console.log(NaN !== NaN);  //false
