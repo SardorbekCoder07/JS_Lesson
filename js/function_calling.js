@@ -83,3 +83,31 @@
 // 	}
 // }
 // auth(role, password)
+
+// const person = {
+// 	name: "Sardorbek",
+// 	greet: function(){
+// 		console.log(this.name)
+// 	}
+// }
+// person.greet()
+
+
+
+
+// let firstName='Jon'
+// let lastName='Snow'
+// const person={
+// 	name:firstName,
+// 	surname:lastName,
+// 	age:20,
+// }
+// let newAge=person.age
+
+// newAge++
+// let cloneObj=person
+
+// function calcAge(newAge){
+// 	return 2025-newAge
+// }
+// let func=calcAge(newAge)
