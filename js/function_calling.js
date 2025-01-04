@@ -54,33 +54,32 @@
 // 	}
 // }
 // console.log(calculate(20,15,"+"))
-const role=prompt("Rolingizni kiriting")
-const password=prompt("Parolingizni kiriting")
-let map;
-const salomlash=()=>{
-	alert(`Xush kelibsiz ${role}`)
-}
-const err=()=>{
-	alert("Login yoki parol xato")
-}
-const login=(role,password)=>{
-	if(role==="admin" && password==="admin123"){
-		salomlash()
-		map='../admin.html'
-		return true
-	}else if(role==="user" && password==="user123"){
-		salomlash()
-		map='../user.html'
-		return true
-	}
-}
+// const role = prompt("Rolingizni kiriting")
+// const password = prompt("Parolingizni kiriting")
+// let map
+// const salomlash = () => {
+// 	alert(`Xush kelibsiz ${role}`)
+// }
+// const err = () => {
+// 	alert("Login yoki parol xato")
+// }
+// const login = (role, password) => {
+// 	if (role === "admin" && password === "admin123") {
+// 		salomlash()
+// 		map = '../admin.html'
+// 		return true
+// 	} else if (role === "user" && password === "user123") {
+// 		salomlash()
+// 		map = '../user.html'
+// 		return true
+// 	}
+// }
 
-const auth=(role,password)=>{
-	if(login(role,password)){
-		window.location.href=map
-	}else{
-		err()
-	}
-}
-auth(role,password)
-
+// const auth = (role, password) => {
+// 	if (login(role, password)) {
+// 		window.location.href = map
+// 	} else {
+// 		err()
+// 	}
+// }
+// auth(role, password)
