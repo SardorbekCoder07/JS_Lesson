@@ -128,6 +128,6 @@
 // let fruitArray = fruits.split(",")
 // console.log(fruitArray.join(' ')) 
 
-let path = "2024-01-01"
-let dateParts = path.split("-")
-console.log(dateParts) 
+// let path = "2024-01-01"
+// let dateParts = path.split("-")
+// console.log(dateParts) 
