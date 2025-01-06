@@ -150,3 +150,39 @@
 // let regex = /cat/;
 // console.log(regex.test("I have a cat")); 
 // console.log(regex.test("I have a dog")); 
+
+// let regex = /t.c/
+// console.log(regex.test("cat"))
+// console.log(regex.test("cut"))
+// console.log(regex.test("tcoon")) 
+
+// let regex = /hello$/
+// console.log(regex.test("hello world"))
+// console.log(regex.test("say hello")) 
+
+// let regex = /ca*r*t/
+// console.log(regex.test("ct"))
+// console.log(regex.test("cat"))
+// console.log(regex.test("caaarrrt"))
+
+// let regex = /ca+t/
+// console.log(regex.test("ct"))
+// console.log(regex.test("cat"))
+// console.log(regex.test("caaaat")) 
+
+// let regex = /ca?t/
+// console.log(regex.test("ct"))
+// console.log(regex.test("cat"))
+// console.log(regex.test("caaaat"))
+
+// let pass=prompt("Iltimos parolingizda kamida bitta _ belgi bulishi shart")
+// let regex = /[_]/
+// if(regex.test(pass)){
+// 	alert("Parol mos keldi")
+// }else{
+// 	alert("Parol mos emas")
+// }
+
+// let regex = /[a-z,A-Z]/ // kichik harflar
+// console.log(regex.test("hello"))
+// console.log(regex.test("HELLO")) 
