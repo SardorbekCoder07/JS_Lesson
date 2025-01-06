@@ -88,3 +88,7 @@
 // }else{
 // 	alert('Mamlakatingizni telefon raqam kodini quyishingiz shart masalan +998')
 // }
+
+	// let text = "Hello world!"
+	// console.log(text.endsWith("world!")) // true
+	// console.log(text.endsWith("Hello"))  // false
