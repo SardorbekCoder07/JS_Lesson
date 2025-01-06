@@ -117,3 +117,5 @@
 
 // console.log(lastPart) 
 
+// const message = "Front-end dasturlash harqalay dasturlash"
+// console.log(message.replace('dasturlash', 'dasturchi'))
