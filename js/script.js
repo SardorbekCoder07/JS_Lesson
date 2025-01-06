@@ -64,3 +64,7 @@
 // let text = "Sar dorbek"
 // let char = text.charAt(3)
 // console.log(char)
+
+// let name1 = "Sardorbeak"
+// let result = name1.lastIndexOf("a")
+// console.log(result)
