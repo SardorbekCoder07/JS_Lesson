@@ -58,3 +58,5 @@
 // console.log(BigInt(4) === BigInt(4))  //false
 // console.log(NaN != NaN);   //true
 // console.log(NaN !== NaN);  //false
+// let firstName=prompt("Ismingizni kiriting");
+// document.write(firstName.toLowerCase())
