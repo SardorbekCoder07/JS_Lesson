@@ -108,3 +108,12 @@
 // let str = "JavaScript"
 // console.log(str.substring(-2,4))
 
+// const greeting = "Salom, Sardorbek!"
+// const slicedPart = greeting.substring(7)
+
+// console.log(slicedPart) 
+// const message = "Front-end dasturlash"
+// const lastPart = message.slice(-2)
+
+// console.log(lastPart) 
+
