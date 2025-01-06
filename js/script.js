@@ -78,3 +78,13 @@
 // }else{
 // 	alert("Siz @gmail.com yozmadingiz")
 // }
+// let text = "Helloworld!"
+// // console.log(text.startsWith("Hello"))
+// console.log(text.startsWith("world")) 
+
+// let phoneNumber=prompt("raqamingizni kiriting")
+// if(phoneNumber.startsWith('+998')){
+// 	alert("Raqamingiz muvaffaqiyatli yuborildi")
+// }else{
+// 	alert('Mamlakatingizni telefon raqam kodini quyishingiz shart masalan +998')
+// }
