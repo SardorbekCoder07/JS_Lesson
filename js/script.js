@@ -131,3 +131,18 @@
 // let path = "2024-01-01"
 // let dateParts = path.split("-")
 // console.log(dateParts) 
+
+// let sentence = "one two three four five"
+// let limitedWords = sentence.split(" ", 6)
+// console.log(limitedWords) 
+
+// let text = "   Hello, World!   "
+// let trimmedText = text.trimEnd()
+// console.log(trimmedText) 
+
+// let word = "salom"
+// console.log(word.repeat(3).split('m').join('m Sardorbek '))
+
+// let regex = /hello/
+// console.log(regex.test("hello world"))
+// console.log(regex.test("hi world")) 
