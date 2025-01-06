@@ -119,3 +119,15 @@
 
 // const message = "Front-end dasturlash harqalay dasturlash"
 // console.log(message.replace('dasturlash', 'dasturchi'))
+
+// let text = "JavaScript is awesome"
+// let words = text.split("s")
+// console.log(words) 
+
+// let fruits = "apple,banana,cherry"
+// let fruitArray = fruits.split(",")
+// console.log(fruitArray.join(' ')) 
+
+let path = "2024-01-01"
+let dateParts = path.split("-")
+console.log(dateParts) 
