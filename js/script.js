@@ -146,3 +146,7 @@
 // let regex = /hello/
 // console.log(regex.test("hello world"))
 // console.log(regex.test("hi world")) 
+
+// let regex = /cat/;
+// console.log(regex.test("I have a cat")); 
+// console.log(regex.test("I have a dog")); 
