@@ -94,4 +94,17 @@
 // console.log(text.endsWith("Hello"))  // false
 
 // let text = "Helloworld!"
-// console.log(text.substring(7,1))
+// console.log(text.substring(-7,1))
+
+// let str = "JavaScript"
+// console.log(str.substring(0, 4))
+
+// let str = "JavaScript"
+// console.log(str.substring(4))
+
+
+// let str = "JavaScript"
+// console.log(str.substring(-3, 6)) 
+// let str = "JavaScript"
+// console.log(str.substring(-2,4))
+
