@@ -68,3 +68,13 @@
 // let name1 = "Sardorbeak"
 // let result = name1.lastIndexOf("a")
 // console.log(result)
+// let text = "sardorbekcoder@gmail.com"
+// console.log(text.includes("@gmail.com"))
+// console.log(text.includes("Java")) 
+
+// let email=prompt('Yangi emailni kiriting')
+// if(email.includes("@gmail.com")){
+// 	alert("Email muvaffaqiyatli yuborildi")
+// }else{
+// 	alert("Siz @gmail.com yozmadingiz")
+// }
