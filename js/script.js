@@ -186,3 +186,10 @@
 // let regex = /[a-z,A-Z]/ // kichik harflar
 // console.log(regex.test("hello"))
 // console.log(regex.test("HELLO")) 
+
+// var reg = /^\d+$/;
+// console.log(reg.test("dasda 123"));
+
+// let reg = /^[+][0-9]*$/
+// console.log(reg.test("+123"));
+
