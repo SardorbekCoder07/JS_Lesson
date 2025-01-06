@@ -60,3 +60,7 @@
 // console.log(NaN !== NaN);  //false
 // let firstName=prompt("Ismingizni kiriting");
 // document.write(firstName.toLowerCase())
+
+// let text = "Sar dorbek"
+// let char = text.charAt(3)
+// console.log(char)
