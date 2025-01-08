@@ -193,3 +193,30 @@
 // let reg = /^[+][0-9]*$/
 // console.log(reg.test("+123"));
 
+// const elements = ['logitech',true]
+// // const a=elements[0] 
+// // const b=elements[1] 
+// // const c=elements[2]
+
+// const [a, b='1', c='2'] = elements
+// console.log(a, b, c);
+
+// const numbers = [10, 20, 30, 40]
+
+// const [, ikkinchi, , totinchi] = numbers
+
+
+// function getCoordinates() {
+// 	return ['logitech', true]
+// }
+
+// const [a, b] = getCoordinates()
+
+// console.log(a,b)
+
+
+// const nested = [1, [2, 3], 4]
+// const [x,[y,f],z]=nested
+
+// console.log(x,y,z,f);
+
