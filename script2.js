@@ -102,9 +102,29 @@
 
 // }
 
-let word = 'Muhammadrahimxon'//input
-let unf = ''
-for (let i = word.length - 1; i >= 0; i--) {
-	unf += word[i]
-}
-console.log(unf)
+// let word = 'Muhammadrahimxon'//input
+// let unf = ''
+// for (let i = word.length - 1; i >= 0; i--) {
+// 	unf += word[i]
+// }
+// console.log(unf)
+
+//lenght methodini quldan yaratib kuramiz
+
+
+// const lenght = (word) => {
+// 	console.log(word)
+// 	let s = 0
+// 	for (let i = 0; i <= word.lenght-1; i++) {
+// 		s +=1 
+// 		console.log(s)
+// 	}
+// }
+// lenght("word")
+
+//10 gacha bulgan raqamlar yig'indisini topish
+// let s = 0
+// for (let i = 0; i <= 10; i++) {
+// 	s += i
+// }
+// console.log(s)
