@@ -101,4 +101,14 @@
 // console.log(typeof typeof typeof 1);
 // console.log(3 > 2 > 1);
 
-console.log(('b' + 'a' + + 'a' + 'a').toLowerCase());
+// console.log(('b' + 'a' + + 'a' + 'a').toLowerCase());
+// const isTrue = true == [];
+// console.log(isTrue);
+// const numbers = [33, 2, 8]; 
+// numbers.sort();
+// console.log(numbers[1]);
+// var x = 0o12;
+// console.log(x); //8
+
+
+
