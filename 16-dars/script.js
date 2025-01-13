@@ -92,3 +92,13 @@
 // console.log(last([7, 9, 0, -2]))
 // console.log(last([7, 9, 0, -2], 3))
 // console.log(last([7, 9, 0, -2], 6))
+
+// let array = [1, 2, 3]
+// array[6] = 9
+// console.log(array[5])
+// console.log(0.1+0.2===0.1+0.2);
+
+// console.log(typeof typeof typeof 1);
+// console.log(3 > 2 > 1);
+
+console.log(('b' + 'a' + + 'a' + 'a').toLowerCase());
