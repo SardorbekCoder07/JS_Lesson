@@ -19,3 +19,24 @@
 // fruits[3] = "Kiwi"//yangilangan massiv 
 // console.log(fruits);
 
+
+/* massivni uzunligini topish*/
+
+// let arr=[1,2,3,4,5]
+// console.log(arr.length);
+
+/* massiv qiymatlarini boshqa bir uzgaruvchiga saqlash */
+
+// let arr=[1,2,3,4,5]
+// let inx5=arr[4]
+// console.log(inx5);
+
+/* massiv elementlarin for operatorsidan foydalanish*/
+
+// let names=["Ali","Vali","Hasan","Husan"]
+
+
+// for(let i=0;i<names.length;i++){
+// 	console.log(`${i+1}-element: ${names[i]}`);
+// }
+
