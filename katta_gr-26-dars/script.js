@@ -89,16 +89,22 @@
 // console.log(clonedNumbers) 
 
 // Massivlarda Rest Pattern
-const fruits = ["apple", "banana", "orange", "grape"]
-const [first, second, ...restFruits] = fruits
+// const fruits = ["apple", "banana", "orange", "grape"]
+// const [first, second, ...restFruits] = fruits
 
-console.log(first)
-console.log(second)
-console.log(restFruits)
+// console.log(first)
+// console.log(second)
+// console.log(restFruits)
 
 // Obyektlarda Rest Pattern
-const user = { name: "Sardorbek", age: 25, country: "Uzbekistan" }
-const { name, ...restDetails } = user
+// const user = { name: "Sardorbek", age: 25, country: "Uzbekistan" }
+// const { name, ...restDetails } = user
 
-console.log(name)
-console.log(restDetails) 
+// console.log(name)
+// console.log(restDetails) 
+
+// function func() {
+// 	return arguments
+// }
+// let number=[1,2,3]
+// console.log(func(...number));
