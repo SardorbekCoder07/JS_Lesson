@@ -58,7 +58,53 @@ console.log(total(arr));
 23.Arraydagi 0 ni 1 ga o‘zgartiruvchi funksiya yozing
 24. Arraydagi har bir elementni toq son bo‘lsa kvadratga oshiruvchi funksiya yozing. */
 
-const arr = [13, 24, -5, 45, 56, 56.1]
+
+/* 
+const arr = [1, 2, 3, 4, 5, 6]
+
+const reversFunc = (param) => {
+	let reverse=[]
+	for(let i=param.length-1;i>=0;i--){
+		reverse.push(param[i])
+	}
+
+	return reverse
+}
+const simple=reversFunc(arr)
+console.log(simple);
+ */
+/*
+const arr = [2, 3, 2, 4, 5, 5, 6, 7, 3, 2]
+
+const repeatArr = (arr, element) => {
+	let count=0
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] === element) {
+			count++
+		}
+	}
+
+	return `${element}: ${count} marta takrorlangan`
+}
+const simple = repeatArr(arr, 7)
+console.log(simple)
+ */
+
+// const arr = [10,23,67]
+
+// const numberSquare = (param) => {
+// 	let nestedArr = []
+// 	for (let i = 0; i < param.length; i++) {
+// 		nestedArr.push(param[i] ** 2)
+// 	}
+
+// 	return nestedArr
+// }
+// const simple=numberSquare(arr)
+// console.log(simple);
+
+
+/* const arr = [13, 24, -5, 45, 56, 56.1]
 
 const minmax = (parametr) => {
 	let min = parametr[0]
@@ -76,4 +122,5 @@ const minmax = (parametr) => {
 }
 
 const simple=minmax(arr)
-console.log(simple);
+console.log(simple); */
+
