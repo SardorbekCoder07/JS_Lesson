@@ -293,7 +293,7 @@ console.log(simple); */
 // numbers.sort((a, b) => b-a)
 // console.log(numbers) 
 
-let words = ["elephant", "cat", "butterfly", "ant"]
+// let words = ["elephant", "cat", "butterfly", "ant"]
 
-words.sort((a, b) => a.length - b.length)
-console.log(words) 
+// words.sort((a, b) => a.length - b.length)
+// console.log(words) 
