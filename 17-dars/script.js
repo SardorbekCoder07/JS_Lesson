@@ -50,7 +50,6 @@ const universal_obj = {
 }
 console.log(universal_obj.nested_obj.skils[0]); */
 
-
 const laliga = [
 	{
 		clubName: "Barselona",
