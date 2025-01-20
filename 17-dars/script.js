@@ -98,7 +98,3 @@ const sorted = laliga.sort((a, b) => {
 		return b.point - a.point
 	}
 })
-
-console.table(sorted);
-
-
