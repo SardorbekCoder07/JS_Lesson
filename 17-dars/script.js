@@ -50,3 +50,55 @@ const universal_obj = {
 }
 console.log(universal_obj.nested_obj.skils[0]); */
 
+
+const laliga = [
+	{
+		clubName: "Barselona",
+		point: 48,
+		matches: 20,
+		scoreGoals: 25,
+	},
+	{
+		clubName: "Real Madrid",
+		point: 48,
+		matches: 20,
+		scoreGoals: 27,
+	},
+	{
+		clubName: "Atletiko Madrid",
+		point: 44,
+		matches: 20,
+		scoreGoals: 21,
+	},
+	{
+		clubName: "Atletik Bilbao",
+		point: 39,
+		matches: 20,
+		scoreGoals: 13,
+	},
+	{
+		clubName: "Villareal",
+		point: 30,
+		matches: 20,
+		scoreGoals: 13,
+	},
+	{
+		clubName: "Muhammad",
+		point: 50,
+		matches: 20,
+		scoreBals: [15,20,23,25],
+		average:
+	}
+]
+// console.log(laliga)
+const sorted = laliga.sort((a, b) => {
+	if (a.point === b.point) {
+		return b.scoreGoals - a.scoreGoals
+	} else {
+		return b.point - a.point
+	}
+})
+
+console.table(sorted);
+
+
