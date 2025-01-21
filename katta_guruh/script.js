@@ -16,4 +16,24 @@ const gameEvents = new Map([
 	[80, '🔴RED CARD'],
 	[92, '⚽GOAL'],
 ])
+console.log(gameEvents);
+
+
+const eventOBJ = new Set(gameEvents.values())
+const arrayEvent = [...eventOBJ]
+
+//2
+gameEvents.delete(64)
+//3
+
+const totalTime=Math.max(...gameEvents.keys())
+const averageTime=totalTime/gameEvents.size
+console.log(`Average time is ${Math.trunc(averageTime)} minutes`);
+
+//4
+for(const [minute,value] of gameEvents.entries()){
+	const halftime=minute<=45?"First half":'Second half'
+	console.log(`${halftime}:${minute}=>${value}`);
+}
+
 
