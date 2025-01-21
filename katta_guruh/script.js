@@ -17,14 +17,3 @@ const gameEvents = new Map([
 	[92, '⚽GOAL'],
 ])
 
-// const myMap = new Map()
-// /* MAP ga malumot qo'shish set() */
-// myMap.set('name', 'Sardorbek')
-// myMap.set('age', 25)
-// myMap.set(true, 'Bu boolean kalit')
-// myMap.set({ id: 1 }, 'Bu obyekt kalit')
-
-
-// for(const [key,value] of myMap.entries()){
-// 	console.log(key,value);
-// }
