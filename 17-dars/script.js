@@ -49,7 +49,7 @@ const universal_obj = {
 	}
 }
 console.log(universal_obj.nested_obj.skils[0]); */
-
+/* 
 const laliga = [
 	{
 		clubName: "Barselona",
@@ -96,4 +96,27 @@ const sorted = laliga.sort((a, b) => {
 	} else {
 		return b.point - a.point
 	}
+}) */
+
+const students = [
+	{ name: "Ali", scores: [85, 90, 78] },
+	{ name: "Vali", scores: [92, 88, 95] },
+	{ name: "Zarina", scores: [75, 80, 70] },
+	{ name: "Dilnoza", scores: [88, 85, 91] }
+]
+
+// 1. Har bir talabaga o‘rtacha baho hisoblash
+students.forEach((student) => {
+	const totalScore = student.scores.reduce((total, score) => total + score, 0)
+	student.averageScore = totalScore / student.scores.length // O‘rtacha baho
+	console.log(`${student.name}: O‘rtacha baho = ${student.averageScore.toFixed(2)}`)
 })
+
+// 2. Eng yuqori o‘rtacha bahoga ega talabani topish
+const topStudent = students.reduce((highest, student) =>
+	student.averageScore > highest.averageScore ? student : highest,
+	students[0]
+)
+
+console.log(`Eng yuqori o‘rtacha bahoga ega talaba: ${topStudent.name}, O‘rtacha baho = ${topStudent.averageScore.toFixed(2)}`);
+
