@@ -118,3 +118,36 @@ console.log(simple); */
 // let max=Math.max(...arr)
 // console.log(`eng baland ball ${max}`);
 
+/* const fruits = [
+	{
+		name: 'apple',
+		price: 2500000
+	},
+	{
+		name: 'banana',
+		price: 2000000
+	},
+	{
+		name: 'cherry',
+		price: 3500000
+	},
+	{
+		name: 'date',
+		price: 2600000
+	},
+	{
+		name: 'fig',
+		price: 3000000
+	}
+]
+let saledFruit=fruits.map(fruit=>{
+	return  {
+		name:fruit.name,
+		price:fruit.price-fruit.price*0.1
+	}
+})
+
+let sortFruits =saledFruit.filter(fruit=>{
+	return fruit.price>=2500000
+})
+console.table(sortFruits); */
