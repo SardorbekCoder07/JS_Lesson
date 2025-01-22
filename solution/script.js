@@ -58,7 +58,7 @@ console.log(total(arr));
 23.Arraydagi 0 ni 1 ga o‘zgartiruvchi funksiya yozing
 24. Arraydagi har bir elementni toq son bo‘lsa kvadratga oshiruvchi funksiya yozing. */
 
-const arr = [13, 24, -5, 45, 56, 56.1]
+/* const arr = [13, 24, -5, 45, 56, 56.1]
 
 const minmax = (parametr) => {
 	let min = parametr[0]
@@ -76,4 +76,45 @@ const minmax = (parametr) => {
 }
 
 const simple=minmax(arr)
-console.log(simple);
+console.log(simple); */
+
+/* Talabar bahosi misoli */
+
+// const students = [
+// 	{
+// 		studentName: 'Ali',
+// 		totalSocere: [20, 25, 27, 30],
+// 	},
+// 	{
+// 		studentName: 'Vali',
+// 		totalSocere: [15, 15, 17, 20],
+// 	},
+// 	{
+// 		studentName: 'Vali',
+// 		totalSocere: [30, 29, 20, 30],
+// 	},
+// 	{
+// 		studentName: 'Hasan',
+// 		totalSocere: [30, 25, 27, 30],
+// 	}
+// ]
+
+// let sum = 0
+// let arr=[]
+// for (let i = 0; i < students.length; i++) {
+// 	for(let j=0; j<students[i].totalSocere.length; j++){
+// 		sum+=students[i].totalSocere[j]
+// 	}
+// 	let average=sum/students[i].totalSocere.length
+// 	arr.push(average)
+// }
+// /* for(let i=0;i<arr.length;i++){
+// 	let a=arr[0]
+// 	if(a<arr[i]){
+// 		a=arr[i]
+// 		console.log(`eng baland ball ${a}`);
+// 	}
+// } */
+// let max=Math.max(...arr)
+// console.log(`eng baland ball ${max}`);
+
