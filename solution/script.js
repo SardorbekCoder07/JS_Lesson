@@ -151,3 +151,40 @@ let sortFruits =saledFruit.filter(fruit=>{
 	return fruit.price>=2500000
 })
 console.table(sortFruits); */
+
+/* const bus = [
+	{
+		bekatName: '1- bekat',
+		inputPeopleCount: 10,
+		outPeopleCount:3,
+	},
+	{
+		bekatName: '2- bekat',
+		inputPeopleCount: 15,
+		outPeopleCount:5
+	},
+	{
+		bekatName: '3- bekat',
+		inputPeopleCount: 7,
+		outPeopleCount:0
+	},
+	{
+		bekatName: '4- bekat',
+		inputPeopleCount: 12,
+		outPeopleCount:4
+	},
+]
+let totalPeopleBekat=bus.map(bekat=>{
+	return {
+		bekatName:bekat.bekatName,
+		averagePeople:+((bekat.inputPeopleCount+bekat.outPeopleCount)/2).toFixed()
+	}
+})
+console.log(totalPeopleBekat); */
+
+/* let sum = 0;
+
+for(let i=0; i<bus.length; i++){
+	sum+=bus[i].peopleCount
+}
+console.log(sum); */
