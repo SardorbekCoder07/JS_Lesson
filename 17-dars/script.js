@@ -67,7 +67,7 @@ const fn = person.greet
 fn()
  */
 
-const team = {
+/* const team = {
 	name: "Barcelona",
 	players: ["Messi", "Xavi", "Iniesta"],
 	showPlayers() {
@@ -78,4 +78,33 @@ const team = {
 	},
 }
 
-team.showPlayers() 
+team.showPlayers()  */
+
+const products = [
+	{
+		id: 1,
+		name: "Iphone 13",
+		price: 4000,
+	},
+	{
+		id: 2,
+		name: "Iphone 14",
+		price: 5000,
+	},
+	{
+		id: 3,
+		name: "Iphone 15",
+		price: 6000,
+	},
+	{
+		id: 4,
+		name: "Iphone 16",
+		price: 7000,
+	},
+	{
+		id: 5,
+		name: "Iphone 17",
+		price: 8000,
+	},
+]
+
