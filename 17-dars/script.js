@@ -12,4 +12,11 @@ for(const i of person){
 for (const i of numbers) {
 	console.log(`Index: ${i}`)
 }
- */
+ 
+
+*/
+/* const word = "JavaScript"
+
+for (const char in word) {
+	console.log([char])
+} */
