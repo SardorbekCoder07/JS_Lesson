@@ -66,3 +66,16 @@ const person = {
 const fn = person.greet
 fn()
  */
+
+const team = {
+	name: "Barcelona",
+	players: ["Messi", "Xavi", "Iniesta"],
+	showPlayers() {
+		this.players.forEach(player=>{
+			return console.log(player);
+			
+		})
+	},
+}
+
+team.showPlayers() 
