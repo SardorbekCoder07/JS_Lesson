@@ -61,6 +61,7 @@ console.log(sardorbek("Sayfullayev")) */
 	return console.log("Assalom");
 	
 } */
-/* document.querySelector('body').addEventListener('keydown', (event)=>{
-	console.log(event.key);
-}) */
+/* document.querySelector('body').addEventListener('click', (e) => {
+	e.preventDefault()
+})
+ */
