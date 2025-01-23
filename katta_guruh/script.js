@@ -36,3 +36,31 @@ function gigantFN(a) {
 }
 const parametr=operator(2, 3, 4);
 console.log(gigantFN(parametr)) */
+/* 
+function fn(a,b){
+	return function (x,y){
+		return a*x+b*y
+	}
+}
+const temur=fn(4,5)
+
+console.log(temur(5,4)); */
+/* 
+function tashqiFunksiya(salom) {
+	return function (ism) {
+		return function (familya) {
+			return `${salom}, ${ism} ${familya} !`
+		}
+	}
+}
+tashqiFunksiya()
+const salomBerUz = tashqiFunksiya("Assalomu alaykum")
+const sardorbek=salomBerUz("Sardorbek")
+console.log(sardorbek("Sayfullayev")) */
+/* function salom(){
+	return console.log("Assalom");
+	
+} */
+/* document.querySelector('body').addEventListener('keydown', (event)=>{
+	console.log(event.key);
+}) */
