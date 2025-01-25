@@ -112,3 +112,95 @@
 
 
 
+// Tasodifiy matnlar ro'yxati (array)
+const texts = [
+	"JavaScript ni o'rganish juda qiziqarli.",
+	"Foydalanuvchi yozgan matnni tekshirish testda.",
+	"Bu yerda ko'plab harflar va so'zlar mavjud.",
+	"Yozish tezligini oshirish uchun mashq qiling.",
+	"Matnni tez va to'g'ri yozish juda muhim."
+]
+
+let timer = 0
+let isTyping = false
+let startTime
+let timerInterval
+let wordCount = 0
+let correctCharCount = 0
+
+const textElement = document.getElementById('text')
+const inputField = document.getElementById('input-field')
+const timerElement = document.getElementById('timer')
+const wpmElement = document.getElementById('wpm')
+const accuracyElement = document.getElementById('accuracy')
+const startBtn = document.getElementById('start-btn')
+
+// Tasodifiy matnni tanlash
+function randomText() {
+	return texts[Math.floor(Math.random() * texts.length)]
+}
+
+function startTimer() {
+	startTime = Date.now()
+	timerInterval = setInterval(() => {
+		timer = Math.floor((Date.now() - startTime) / 1000) // vaqtni sekundlarda hisoblash
+		timerElement.textContent = timer
+	}, 1000)
+}
+
+function calculateWPM() {
+	const typedWords = inputField.value.trim().split(/\s+/).length
+	const wpm = Math.floor((typedWords / timer) * 60)
+	wpmElement.textContent = wpm
+}
+
+function calculateAccuracy() {
+	const typedText = inputField.value
+	const originalText = textElement.textContent
+	let correctChars = 0
+
+	for (let i = 0; i < typedText.length; i++) {
+		if (typedText[i] === originalText[i]) {
+			correctChars++
+		}
+	}
+
+	const accuracy = Math.floor((correctChars / originalText.length) * 100)
+	accuracyElement.textContent = accuracy
+}
+
+function resetTest() {
+	inputField.value = ''
+	textElement.textContent = randomText() // Tasodifiy matnni ko'rsatish
+	timer = 0
+	wordCount = 0
+	correctCharCount = 0
+	clearInterval(timerInterval)
+	timerElement.textContent = '0'
+	wpmElement.textContent = '0'
+	accuracyElement.textContent = '100'
+}
+
+startBtn.addEventListener('click', () => {
+	resetTest()
+	startBtn.style.display = 'none' // Boshlash tugmasini yashirish
+	inputField.disabled = false
+	inputField.focus()
+	startTimer()
+})
+
+inputField.addEventListener('input', () => {
+	if (!isTyping) {
+		isTyping = true
+		startTimer() // vaqtni boshlash
+	}
+
+	calculateAccuracy()
+	calculateWPM()
+
+	if (inputField.value === textElement.textContent) {
+		clearInterval(timerInterval)
+		alert(`Yozish tugadi! \nVaqt: ${timer} sekund \nTezlik: ${wpmElement.textContent} so'z/minut \nAniqlik: ${accuracyElement.textContent}%`)
+		startBtn.style.display = 'block' // Test tugagach, boshlash tugmasini qaytarish
+	}
+})

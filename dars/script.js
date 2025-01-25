@@ -297,3 +297,40 @@ console.log(simple); */
 
 // words.sort((a, b) => a.length - b.length)
 // console.log(words) 
+
+const formValidator = new MyFormValidator()
+
+
+function MyFormValidator() {
+	this.name = ""
+	this.email = ""
+	this.password = ""
+	this.errors = {
+		name: false,
+		email: false,
+		password: false
+	}
+	this.validateName = function () {
+		const nameInput = document.getElementById('name')
+		const nameError = document.getElementById('nameError')
+		if (nameInput.value.trim() === '') {
+			nameError.classList.remove('hidden')
+			this.errors.name = true
+		} else {
+			nameError.classList.add('hidden')
+			this.errors.name = false
+		}
+	}
+
+
+
+	this.submitForm = function (event) {
+		event.preventDefault()
+		this.validateName()
+
+		if(!this.errors.name) {
+			alert('Forma muvaffaqiyatli yuborildi')
+		}
+	}
+}
+
