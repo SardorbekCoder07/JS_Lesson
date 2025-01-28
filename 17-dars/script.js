@@ -24,6 +24,34 @@
 
 // console.log(Object.is(25, 25))
 // console.log(Object.is(NaN, NaN))
-// console.log(Object.is(0, -0)) \
+// console.log(Object.is(0, -0)) 
+
+// function myWord() {
+// 	console.log("My word", this)
+// }
 
 
+// const car = {
+// 	name: 'BMW',
+// 	year: 2020,
+// 	sayName: myWord,
+// 	sayNameWindow: myWord.bind(window),
+// 	info: function (model) {
+// 		console.log(`Car name is ${this.name} and year is ${this.year}`)
+// 		console.log(`Car model is ${model}`)
+// 	}
+// }
+
+// const gentra = {
+// 	name: 'Gentra',
+// 	year: 2021,
+// }
+// // car.info.bind(gentra,"Chevrolet")()
+// car.info.call(gentra, "Chevrolet")
+
+const a=10;
+function getName(){
+	const a=20;
+	console.log(a);
+}
+getName()
