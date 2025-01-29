@@ -48,10 +48,3 @@
 // }
 // // car.info.bind(gentra,"Chevrolet")()
 // car.info.call(gentra, "Chevrolet")
-
-const a=10;
-function getName(){
-	const a=20;
-	console.log(a);
-}
-getName()

@@ -3,36 +3,25 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Object</title>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-			body {
-				height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background: rgb(182, 153, 5);
-				background: linear-gradient(
-					90deg,
-					rgba(182, 153, 5, 1) 0%,
-					rgba(193, 199, 39, 1) 35%,
-					rgba(242, 251, 88, 1) 100%
-				);
-			}
-			h1 {
-				font-size: 100px;
-				text-align: center;
-				color: rgb(0, 0, 0);
-			}
-		</style>
+		<title>Phone Number Authentication</title>
 	</head>
-
 	<body>
-		<h1>Object methods</h1>
+		<h1>Sign In with Phone Number</h1>
 
-		<script src="./script.js"></script>
+		<!-- Step 1: Enter Phone Number -->
+		<div id="phone-step">
+			<label for="phone">Phone Number:</label>
+			<input type="tel" id="phone" placeholder="+998901234567" required />
+			<button id="send-otp">Send OTP</button>
+		</div>
+
+		<!-- Step 2: Enter OTP -->
+		<div id="otp-step" style="display: none">
+			<label for="otp">Enter OTP:</label>
+			<input type="text" id="otp" placeholder="123456" required />
+			<button id="verify-otp">Verify OTP</button>
+		</div>
+
+		<script src="script.js"></script>
 	</body>
 </html>
