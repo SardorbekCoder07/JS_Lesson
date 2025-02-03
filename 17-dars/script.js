@@ -1,50 +1,30 @@
-// const person = { name: "Sardor", age: 26, city: "Tashkent" }
-// person.age = 30
-// console.log(person);
+const socket = io("http://localhost:3000")
 
-// const person = { name: "Sardor", age: 25 }
-// Object.freeze(person)
-// person.age = 30
-// delete person.name
-// console.log(person)
+const chatBox = document.getElementById("chat-box")
+const messageInput = document.getElementById("message")
 
-// const person = { name: "Sardor", age: 25 }
-// // Object.seal(person)
-// // person.age = 30
-// // person.city = "Tashkent"
-// // console.log(person) 
+// Xabar yuborish
+function sendMessage() {
+	const message = messageInput.value
+	if (message.trim()) {
+		socket.emit("chat message", message)
+		messageInput.value = ""
+	}
+}
 
-// const entries = Object.entries(person)
+// Enter bosilganda xabar yuborish
+function handleEnter(event) {
+	if (event.key === "Enter") {
+		sendMessage()
+	}
+}
 
-// console.log(Object.fromEntries(entries))
+// Xabarni chatga qo‘shish
+socket.on("chat message", (msg) => {
+	const messageElement = document.createElement("p")
+	messageElement.textContent = msg
+	chatBox.appendChild(messageElement)
 
-
-// console.log(person.hasOwnProperty("age"));
-
-
-// console.log(Object.is(25, 25))
-// console.log(Object.is(NaN, NaN))
-// console.log(Object.is(0, -0)) 
-
-// function myWord() {
-// 	console.log("My word", this)
-// }
-
-
-// const car = {
-// 	name: 'BMW',
-// 	year: 2020,
-// 	sayName: myWord,
-// 	sayNameWindow: myWord.bind(window),
-// 	info: function (model) {
-// 		console.log(`Car name is ${this.name} and year is ${this.year}`)
-// 		console.log(`Car model is ${model}`)
-// 	}
-// }
-
-// const gentra = {
-// 	name: 'Gentra',
-// 	year: 2021,
-// }
-// // car.info.bind(gentra,"Chevrolet")()
-// car.info.call(gentra, "Chevrolet")
+	// Chatni pastga scroll qilish
+	chatBox.scrollTop = chatBox.scrollHeight
+})

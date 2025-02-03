@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Phone Number Authentication</title>
+		<title>Telegram Chat</title>
+		<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>Sign In with Phone Number</h1>
-
-		<!-- Step 1: Enter Phone Number -->
-		<div id="phone-step">
-			<label for="phone">Phone Number:</label>
-			<input type="tel" id="phone" placeholder="+998901234567" required />
-			<button id="send-otp">Send OTP</button>
-		</div>
-
-		<!-- Step 2: Enter OTP -->
-		<div id="otp-step" style="display: none">
-			<label for="otp">Enter OTP:</label>
-			<input type="text" id="otp" placeholder="123456" required />
-			<button id="verify-otp">Verify OTP</button>
+		<div class="chat-container">
+			<h2>💬 Telegram Chat</h2>
+			<div id="chat-box"></div>
+			<div class="input-container">
+				<input
+					type="text"
+					id="message"
+					placeholder="Xabar yozing..."
+					onkeypress="handleEnter(event)"
+				/>
+				<button onclick="sendMessage()">📩</button>
+			</div>
 		</div>
 
 		<script src="script.js"></script>

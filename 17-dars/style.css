@@ -1,0 +1,102 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.chat-container {
+	width: 400px;
+	background: #ffffff;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 10px;
+	color: #007bff;
+}
+
+#chat-box {
+	height: 350px;
+	overflow-y: auto;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background: #f4f7fc;
+}
+
+/* Har bir xabar */
+.message {
+	max-width: 75%;
+	padding: 10px 15px;
+	border-radius: 15px;
+	word-wrap: break-word;
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+}
+
+/* Yuborilgan xabar (o'ng tomonda) */
+.sent {
+	background: linear-gradient(135deg, #007bff, #0056b3);
+	color: white;
+	border-top-right-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	margin-left: auto; /* O'ng tomonga olish */
+	text-align: right;
+}
+
+/* Olingan xabar (chap tomonda) */
+.received {
+	background: #e0e0e0;
+	color: black;
+	border-top-left-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-right: auto; /* Chap tomonga olish */
+	text-align: left;
+}
+
+/* Matn kiritish joyi */
+.input-container {
+	display: flex;
+	margin-top: 10px;
+}
+
+input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	outline: none;
+	font-size: 14px;
+}
+
+/* Yuborish tugmasi */
+button {
+	background: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 5px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button:hover {
+	background: #0056b3;
+}
