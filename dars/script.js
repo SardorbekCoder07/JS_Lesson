@@ -19,3 +19,10 @@ const c=person.city
 const d=person.address
 const f=person.phone */
 // console.log(a,sardor,c,d,f);
+
+
+/* const obj = { key1: "value1", key2: "value2" }
+
+const { key1: newName } = obj
+
+console.log(newName)  */
