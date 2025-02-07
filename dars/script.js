@@ -23,6 +23,6 @@ const f=person.phone */
 
 /* const obj = { key1: "value1", key2: "value2" }
 
-const { key1: newName } = obj
+const { key1: newName,key3=0 } = obj
 
-console.log(newName)  */
+console.log(key3)  */
