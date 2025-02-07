@@ -106,3 +106,11 @@ console.log(name, restDetails);
 console.log(sum(1, 2, 3))
 
 console.log(sum(1, 2, 3, 4)) */
+
+
+function multiply(multiplier, ...theArgs) {
+	return theArgs.map((element) => multiplier * element)
+}
+
+const arr = multiply(2, 15, 25, 42)
+console.log(arr)
