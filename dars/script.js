@@ -24,7 +24,6 @@ const f=person.phone */
 /* const obj = { key1: "value1", key2: "value2" }
 
 const { key1: newName,key3=0 } = obj
-
 console.log(key3)  */
 
 /* const arr1 = [1, 2, 3]
@@ -35,10 +34,31 @@ console.log(bi); */
 // console.log(...arr1,...); */
 
 
-const abs=(a,b,c)=>{
+/* const abs=(a,b,c)=>{
 	return a+b+c
 }
 const arr=[1,2,3]
 console.log(abs(...arr));
 
+ */
+
+const obj1 = {
+	name: 'sardor',
+	age: 20
+}
+const obj2 = {
+	name1: 'sardor',
+	age1: 20
+}
+const obj3 = {
+	name2: 'sardor',
+	age2: 20
+}
+
+const obj4={
+	...obj1,
+	...obj2,
+	...obj3
+}
+console.log(obj4);
 
