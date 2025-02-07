@@ -1,4 +1,2 @@
-function demo() {
-    let localVariable = "Hello";
-
-}
+console.log("Salom hammaga")
+console.log("Salom hammaga")
