@@ -62,11 +62,16 @@ const obj4={
 }
 console.log(obj4); */
 
-
+/* 
 const arr = [1, 2, 3]
 const arrCopy = [...arr,4]
 console.log(arrCopy)
 
 const obj = { a: 1, b: 2 }
 const objCopy = { ...obj }
-console.log(objCopy) 
+console.log(objCopy)  */
+
+const fruits = ["apple", "banana"]
+const vegetables = ["carrot", "potato"]
+const combined = [...fruits, "mango", ...vegetables]
+console.log(combined) 
