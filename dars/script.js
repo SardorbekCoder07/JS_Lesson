@@ -27,8 +27,18 @@ const { key1: newName,key3=0 } = obj
 
 console.log(key3)  */
 
-const arr1 = [1, 2, 3]
+/* const arr1 = [1, 2, 3]
 const arr2 = [4, 5, 6]
-const bir = arr1.concat(arr2)
-console.log(bir);
+/* const bir = arr1.concat(arr2)
+console.log(bi); */
+
+// console.log(...arr1,...); */
+
+
+const abs=(a,b,c)=>{
+	return a+b+c
+}
+const arr=[1,2,3]
+console.log(abs(...arr));
+
 
