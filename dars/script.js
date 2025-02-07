@@ -71,7 +71,21 @@ const obj = { a: 1, b: 2 }
 const objCopy = { ...obj }
 console.log(objCopy)  */
 
-const fruits = ["apple", "banana"]
+/* const fruits = ["apple", "banana"]
 const vegetables = ["carrot", "potato"]
 const combined = [...fruits, "mango", ...vegetables]
-console.log(combined) 
+console.log(combined)  */
+
+/* const user = { name: "Sardorbek", age: 25 }
+const updatedUser = { ...user, age: 26, city: "Tashkent" }
+console.log(updatedUser)  */
+
+/* const numbers = [1, 2, 3]
+const clonedNumbers = [...numbers]
+clonedNumbers.push(4)
+console.log(numbers)
+console.log(clonedNumbers)  */
+
+const fruits = ["apple", "banana", "orange", "grape"]
+const [first, second, ...restFruits] = fruits
+console.log(first, second, restFruits)
