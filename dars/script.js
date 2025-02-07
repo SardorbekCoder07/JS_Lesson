@@ -26,3 +26,9 @@ const f=person.phone */
 const { key1: newName,key3=0 } = obj
 
 console.log(key3)  */
+
+const arr1 = [1, 2, 3]
+const arr2 = [4, 5, 6]
+const bir = arr1.concat(arr2)
+console.log(bir);
+
