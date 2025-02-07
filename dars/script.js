@@ -42,7 +42,7 @@ console.log(abs(...arr));
 
  */
 
-const obj1 = {
+/* const obj1 = {
 	name: 'sardor',
 	age: 20
 }
@@ -60,5 +60,13 @@ const obj4={
 	...obj2,
 	...obj3
 }
-console.log(obj4);
+console.log(obj4); */
 
+
+const arr = [1, 2, 3]
+const arrCopy = [...arr,4]
+console.log(arrCopy)
+
+const obj = { a: 1, b: 2 }
+const objCopy = { ...obj }
+console.log(objCopy) 
