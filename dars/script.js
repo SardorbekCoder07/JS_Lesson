@@ -86,6 +86,23 @@ clonedNumbers.push(4)
 console.log(numbers)
 console.log(clonedNumbers)  */
 
-const fruits = ["apple", "banana", "orange", "grape"]
+/* const fruits = ["apple", "banana", "orange", "grape"]
 const [first, second, ...restFruits] = fruits
-console.log(first, second, restFruits)
+console.log(first, second, restFruits) */
+
+/* const user = { name: "Sardorbek", age: 25, country: "Uzbekistan" }
+const { name, ...restDetails } = user
+console.log(name, restDetails);
+ */
+
+/* function sum(...theArgs) {
+	let total = 0
+	for (const arg of theArgs) {
+		total += arg
+	}
+	return total
+}
+
+console.log(sum(1, 2, 3))
+
+console.log(sum(1, 2, 3, 4)) */
