@@ -218,14 +218,19 @@ console.log(name); */
 console.log(user?.settings?.theme)
 console.log(user?.settings?.notifications?.email)
 console.log(user?.profile?.age ?? "Ma'lumot yo'q") */
+const set1 = new Set([1, 2, 3, 4])
+const set2 = new Set([3, 4, 5, 6])
+const a = set2.difference(set1)
+console.log(a)
 
-const newSet = new Set()
-newSet.add('Sardorbek')
-newSet.add(true)
-newSet.add(1)
-newSet.add(1)
+// // Birlashtirish (union)
+// const union = new Set([...set1, ...set2])
+// console.log(union)
 
-for (const i of newSet) {
-	console.log(i)
+// // Kesishma (intersection)
+// const intersection = new Set([...set1].filter(x => set2.has(x)))
+// console.log(intersection)
 
-}
+// // Farq (difference)
+const difference = new Set([...set1].filter(x => !set2.has(x)))
+console.log(difference)
