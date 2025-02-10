@@ -176,12 +176,32 @@ console.log(data.name);
 
 console.log(title)
 console.log(description) */
-const user = {
+/* const user = {
 	sayHello: () => "Salom, Sardorbek!",
 }
 
 console.log(user?.sayHello?.())
 
 const user2 = {}
-console.log(user2?.sayHello?.());
+console.log(user2?.sayHello?.()); */
+
+/* const key = "email"
+const user = {
+	name: "Sardorbek",
+	contact: {
+		email1: "sardorbek@example.com",
+	},
+}
+
+console.log(user?.contact?.[key]); */
+
+
+const user = {
+	profile: null,
+}
+console.log(user?.profile?.name);
+
+const name = user?.profile?.name ?? "Mehmon"
+
+console.log(name);
 
