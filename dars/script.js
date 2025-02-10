@@ -225,7 +225,7 @@ newSet.add(true)
 newSet.add(1)
 newSet.add(1)
 
-newSet.clear()
+for (const i of newSet) {
+	console.log(i)
 
-console.log(newSet);
-
+}
