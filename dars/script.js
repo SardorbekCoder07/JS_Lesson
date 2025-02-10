@@ -162,7 +162,7 @@ const aboutTheLast = aboutPerson.lastName ?? "Unknown lastname"
 const aboutTheCity = aboutPerson.city ?? "Unknown city"
  */
 
-function getApiData() {
+/* function getApiData() {
 	return {
 		title: undefined,
 		description: null,
@@ -172,6 +172,16 @@ function getApiData() {
 const data = getApiData()
 const title = data.title ?? "No Title"
 const description = data.description ?? "No Description"
+console.log(data.name);
 
 console.log(title)
-console.log(description)
+console.log(description) */
+const user = {
+	sayHello: () => "Salom, Sardorbek!",
+}
+
+console.log(user?.sayHello?.())
+
+const user2 = {}
+console.log(user2?.sayHello?.());
+
