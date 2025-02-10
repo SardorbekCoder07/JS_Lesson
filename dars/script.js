@@ -128,3 +128,8 @@ function sortArguments(...arguments) {
 }
 
 console.log(sortArguments(5, 3, 7, 1)) */
+
+
+const firstName = Number(prompt("Ismingizni kiriting"))
+const fakeName = "Guest"
+document.write(`Salom ${firstName ?? fakeName}`)
