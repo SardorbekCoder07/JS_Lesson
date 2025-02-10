@@ -254,13 +254,21 @@ for (const i of myMap.entries()) {
 // }
 
 // console.log(obj) 
+const hours = document.getElementById('hour')
+console.log(hours);
 
-let count = 0
-let intervalID = setInterval(() => {
-	count++
-	console.log(`${count} sekund o‘tdi!`)
-	if (count === 5) {
-		clearInterval(intervalID) // 5 martadan keyin to‘xtatamiz
-		console.log("Tugatildi!")
-	}
-}, 1000)
+const minutes = document.getElementById('minute')
+const seconds = document.getElementById('second')
+
+const clock = () => {
+	const date = new Date()
+	const hour = date.getHours()
+	const minute = date.getMinutes()
+	const second = date.getSeconds()
+
+	hours.textContent = hour
+	minutes.textContent = minute
+	seconds.textContent = second
+}
+
+setInterval(clock, 1000)
