@@ -207,7 +207,7 @@ const name = user?.profile?.name ?? "Mehmon"
 console.log(name); */
 
 
-const user = {
+/* const user = {
 	id: 1,
 	name: "Sardorbek",
 	settings: {
@@ -217,4 +217,15 @@ const user = {
 }
 console.log(user?.settings?.theme)
 console.log(user?.settings?.notifications?.email)
-console.log(user?.profile?.age ?? "Ma'lumot yo'q")
+console.log(user?.profile?.age ?? "Ma'lumot yo'q") */
+
+const newSet = new Set()
+newSet.add('Sardorbek')
+newSet.add(true)
+newSet.add(1)
+newSet.add(1)
+
+newSet.clear()
+
+console.log(newSet);
+
