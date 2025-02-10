@@ -147,7 +147,7 @@ const withNullish = 0 ?? "Default"
 console.log(withNullish) */
 
 
-const firstName = prompt("Ismingizni kiriting")
+/* const firstName = prompt("Ismingizni kiriting")
 const lastName = prompt("Familiyangizni kiriting")
 const city = prompt("Shahringizni kiriting")
 
@@ -160,3 +160,18 @@ const aboutPerson = {
 const aboutTheName = aboutPerson.firstName ?? "Unknown firstname"
 const aboutTheLast = aboutPerson.lastName ?? "Unknown lastname"
 const aboutTheCity = aboutPerson.city ?? "Unknown city"
+ */
+
+function getApiData() {
+	return {
+		title: undefined,
+		description: null,
+	}
+}
+
+const data = getApiData()
+const title = data.title ?? "No Title"
+const description = data.description ?? "No Description"
+
+console.log(title)
+console.log(description)
