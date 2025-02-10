@@ -254,7 +254,13 @@ for (const i of myMap.entries()) {
 // }
 
 // console.log(obj) 
-const myMap = new Map()
-myMap.set("name", "Sardorbek")
-myMap.set("age", 25)
-console.log(myMap);
+
+let count = 0
+let intervalID = setInterval(() => {
+	count++
+	console.log(`${count} sekund o‘tdi!`)
+	if (count === 5) {
+		clearInterval(intervalID) // 5 martadan keyin to‘xtatamiz
+		console.log("Tugatildi!")
+	}
+}, 1000)
