@@ -235,7 +235,7 @@ console.log(use?.settings?.notifications?.email)
 // const difference = new Set([...set1].filter(x => !set2.has(x)))
 // console.log(difference)
 
-const myMap = new Map()
+/* const myMap = new Map()
 
 myMap.set('name', 'Sardorbek')
 myMap.set('age', 25)
@@ -247,3 +247,14 @@ for (const i of myMap.entries()) {
 	console.log(`Ikkalasi ham :${i}`)
 }
 
+ */
+// const obj = {
+// 	name: 'Sardorbek',
+// 	age: 25,
+// }
+
+// console.log(obj) 
+const myMap = new Map()
+myMap.set("name", "Sardorbek")
+myMap.set("age", 25)
+console.log(myMap);
