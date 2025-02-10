@@ -196,12 +196,25 @@ const user = {
 console.log(user?.contact?.[key]); */
 
 
-const user = {
+/* const user = {
 	profile: null,
 }
+log
 console.log(user?.profile?.name);
 
 const name = user?.profile?.name ?? "Mehmon"
 
-console.log(name);
+console.log(name); */
 
+
+const user = {
+	id: 1,
+	name: "Sardorbek",
+	settings: {
+		theme: "dark",
+		notifications: null,
+	},
+}
+console.log(user?.settings?.theme)
+console.log(user?.settings?.notifications?.email)
+console.log(user?.profile?.age ?? "Ma'lumot yo'q")
