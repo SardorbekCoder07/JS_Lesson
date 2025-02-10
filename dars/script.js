@@ -130,6 +130,12 @@ function sortArguments(...arguments) {
 console.log(sortArguments(5, 3, 7, 1)) */
 
 
-const firstName = Number(prompt("Ismingizni kiriting"))
+/* const firstName = Number(prompt("Ismingizni kiriting"))
 const fakeName = "Guest"
-document.write(`Salom ${firstName ?? fakeName}`)
+document.write(`Salom ${firstName ?? fakeName}`) */
+
+const age = 0;
+const defaultAge = 18;
+
+const userAge = age || defaultAge;
+console.log(userAge);
