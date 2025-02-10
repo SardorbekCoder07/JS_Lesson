@@ -134,8 +134,14 @@ console.log(sortArguments(5, 3, 7, 1)) */
 const fakeName = "Guest"
 document.write(`Salom ${firstName ?? fakeName}`) */
 
-const age = 0;
+/* const age = 0;
 const defaultAge = 18;
 
-const userAge = age || defaultAge;
-console.log(userAge);
+const userAge = age ?? defaultAge;
+console.log(userAge); */
+
+const withOr = 0 || "Default"
+console.log(withOr)
+
+const withNullish = 0 ?? "Default"
+console.log(withNullish)
