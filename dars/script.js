@@ -115,7 +115,7 @@ console.log(sum(1, 2, 3, 4)) */
 const arr = multiply(2, 15, 25, 42)
 console.log(arr) */
 
-function sortRestArgs(...theArgs) {
+/* function sortRestArgs(...theArgs) {
 	const sortedArgs = theArgs.sort()
 	return sortedArgs
 }
@@ -127,4 +127,4 @@ function sortArguments(...arguments) {
 	return sortedArgs 
 }
 
-console.log(sortArguments(5, 3, 7, 1))
+console.log(sortArguments(5, 3, 7, 1)) */
