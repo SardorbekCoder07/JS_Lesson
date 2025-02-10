@@ -62,7 +62,7 @@ const obj4={
 }
 console.log(obj4); */
 
-/* 
+/*
 const arr = [1, 2, 3]
 const arrCopy = [...arr,4]
 console.log(arrCopy)
@@ -124,7 +124,7 @@ console.log(sortRestArgs(5, 3, 7, 1))
 
 function sortArguments(...arguments) {
 	const sortedArgs = arguments.sort()
-	return sortedArgs 
+	return sortedArgs
 }
 
 console.log(sortArguments(5, 3, 7, 1)) */
@@ -217,20 +217,31 @@ console.log(name); */
 }
 console.log(user?.settings?.theme)
 console.log(user?.settings?.notifications?.email)
-console.log(user?.profile?.age ?? "Ma'lumot yo'q") */
-const set1 = new Set([1, 2, 3, 4])
-const set2 = new Set([3, 4, 5, 6])
-const a = set2.difference(set1)
-console.log(a)
+// /* /* console.log(user?.profile?.age ?? "Ma'lumot yo'q") */
+// const set1 = new Set([1, 2, 3, 4])
+// const set2 = new Set([3, 4, 5, 6])
+// const a = set2.difference(set1)
+// console.log(a)
 
-// // Birlashtirish (union)
-// const union = new Set([...set1, ...set2])
-// console.log(union)
+// // // Birlashtirish (union)
+// // const union = new Set([...set1, ...set2])
+// // console.log(union)
 
-// // Kesishma (intersection)
-// const intersection = new Set([...set1].filter(x => set2.has(x)))
-// console.log(intersection)
+// // // Kesishma (intersection)
+// // const intersection = new Set([...set1].filter(x => set2.has(x)))
+// // console.log(intersection)
 
-// // Farq (difference)
-const difference = new Set([...set1].filter(x => !set2.has(x)))
-console.log(difference)
+// // // Farq (difference)
+// const difference = new Set([...set1].filter(x => !set2.has(x)))
+// console.log(difference)
+
+
+const obj1 = { id: 1, name: "Sardorbek" }
+const obj2 = { id: 2, name: "Jamshid" }
+
+const mySet = new Set()
+mySet.add(obj1)
+mySet.add(obj2)
+mySet.add(obj1)
+
+console.log(mySet)
