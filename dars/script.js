@@ -216,7 +216,7 @@ console.log(name); */
 	},
 }
 console.log(user?.settings?.theme)
-console.log(user?.settings?.notifications?.email)
+console.log(use?.settings?.notifications?.email)
 // /* /* console.log(user?.profile?.age ?? "Ma'lumot yo'q") */
 // const set1 = new Set([1, 2, 3, 4])
 // const set2 = new Set([3, 4, 5, 6])
@@ -235,13 +235,14 @@ console.log(user?.settings?.notifications?.email)
 // const difference = new Set([...set1].filter(x => !set2.has(x)))
 // console.log(difference)
 
+const myMap = new Map()
 
-const obj1 = { id: 1, name: "Sardorbek" }
-const obj2 = { id: 2, name: "Jamshid" }
+myMap.set('name', 'Sardorbek')
+myMap.set('age', 25)
+myMap.set(true, 'Bu boolean kalit')
+myMap.set({ id: 1 }, 'Bu obyekt kalit')
 
-const mySet = new Set()
-mySet.add(obj1)
-mySet.add(obj2)
-mySet.add(obj1)
+console.log(myMap.delete())
+console.log(myMap);
 
-console.log(mySet)
+
