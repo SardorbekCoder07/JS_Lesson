@@ -242,7 +242,8 @@ myMap.set('age', 25)
 myMap.set(true, 'Bu boolean kalit')
 myMap.set({ id: 1 }, 'Bu obyekt kalit')
 
-console.log(myMap.delete())
-console.log(myMap);
 
+for (const i of myMap.entries()) {
+	console.log(`Ikkalasi ham :${i}`)
+}
 
