@@ -140,8 +140,23 @@ const defaultAge = 18;
 const userAge = age ?? defaultAge;
 console.log(userAge); */
 
-const withOr = 0 || "Default"
+/* const withOr = 0 || "Default"
 console.log(withOr)
 
 const withNullish = 0 ?? "Default"
-console.log(withNullish)
+console.log(withNullish) */
+
+
+const firstName = prompt("Ismingizni kiriting")
+const lastName = prompt("Familiyangizni kiriting")
+const city = prompt("Shahringizni kiriting")
+
+const aboutPerson = {
+	firstName,
+	lastName,
+	city
+}
+
+const aboutTheName = aboutPerson.firstName ?? "Unknown firstname"
+const aboutTheLast = aboutPerson.lastName ?? "Unknown lastname"
+const aboutTheCity = aboutPerson.city ?? "Unknown city"
