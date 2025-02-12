@@ -6,7 +6,8 @@
 // console.log(Number.isNaN("abc"))
 // console.log(Number.isNaN(123))
 
-console.log(isFinite(123))
-console.log(isFinite(Infinity))
-console.log(isFinite("123"))
-console.log(isFinite("abc"))
+
+
+console.log(Number.isInteger(123)); 
+console.log(Number.isInteger(123.45)); 
+console.log(Number.isInteger("123")); 
