@@ -6,8 +6,4 @@
 // console.log(Number.isNaN("abc"))
 // console.log(Number.isNaN(123))
 
-
-
-console.log(Number.isInteger(123)); 
-console.log(Number.isInteger(123.45)); 
-console.log(Number.isInteger("123")); 
+console.log(window.Math)
