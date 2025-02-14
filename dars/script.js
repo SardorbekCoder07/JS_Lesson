@@ -9,4 +9,8 @@
 
 
 console.log(Math.ceil(4.7))
-console.log(Math.ceil(-4.7)) 
+console.log(Math.ceil(-4.7))
+
+
+console.log(Math.round(5.5))
+console.log(Math.round(4.4)) 
