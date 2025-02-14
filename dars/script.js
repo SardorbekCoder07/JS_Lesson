@@ -6,4 +6,7 @@
 // console.log(Number.isNaN("abc"))
 // console.log(Number.isNaN(123))
 
-console.log(window.Math)
+
+
+console.log(Math.ceil(4.7))
+console.log(Math.ceil(-4.7)) 
