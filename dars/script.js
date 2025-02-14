@@ -6,3 +6,7 @@
 // console.log(Number.isNaN("abc"))
 // console.log(Number.isNaN(123))
 
+
+
+console.log(Math.sqrt(256)); 
+console.log(Math.cbrt(8)); 
