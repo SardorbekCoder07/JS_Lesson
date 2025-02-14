@@ -6,16 +6,20 @@
 // console.log(Number.isNaN("abc"))
 // console.log(Number.isNaN(123))
 
-
-const Car = function (model, year) {
-	this.model = model
-	this.year = year
+function Car(make, speed) {
+	this.make = make
+	this.speed = speed
+}
+Car.prototype.accelarte = function () {
+	this.speed += 10
+	console.log(`${this.make} endi ${this.speed} km/h tezlikda harakatlanmoqda`)
 }
 
-const bmw = new Car("BMW", 1900)
-const audi = new Car("Audi", 2021)
-
-Car.prototype.calcCarAge = function () {
-	return 2025 - this.year
+Car.prototype.break = function () {
+	this.speed -= 5
+	console.log(`${this.make} endi ${this.speed} km/h tezlikda harakatlanmoqda`)
 }
-console.log(bmw.calcCarAge())
+
+const bmw = new Car("BMW", 120)
+const mers = new Car("Mers", 90)
+)
