@@ -7,6 +7,15 @@
 // console.log(Number.isNaN(123))
 
 
+const Car = function (model, year) {
+	this.model = model
+	this.year = year
+}
 
-console.log(Math.sqrt(256)); 
-console.log(Math.cbrt(8)); 
+const bmw = new Car("BMW", 1900)
+const audi = new Car("Audi", 2021)
+
+Car.prototype.calcCarAge = function () {
+	return 2025 - this.year
+}
+console.log(bmw.calcCarAge())
