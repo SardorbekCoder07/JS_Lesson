@@ -6,20 +6,34 @@
 // console.log(Number.isNaN("abc"))
 // console.log(Number.isNaN(123))
 
-function Car(make, speed) {
-	this.make = make
-	this.speed = speed
-}
-Car.prototype.accelarte = function () {
-	this.speed += 10
-	console.log(`${this.make} endi ${this.speed} km/h tezlikda harakatlanmoqda`)
+class Person {
+	constructor(name, age) {
+		this.name = name
+		this._age = age
+	}
+
+	// Getter
+
+	get getAge() {
+		return `${this.name}ning yoshi :${this._age}`
+	}
+
+	//setter yoshni o'zgartiradi
+
+	set getAge(newAge) {
+		if(newAge<0){
+			console.log("Yosh manfiy bo'lishi mumkin emas")
+		}else{
+			this._age=newAge
+		}
+	}
 }
 
-Car.prototype.break = function () {
-	this.speed -= 5
-	console.log(`${this.make} endi ${this.speed} km/h tezlikda harakatlanmoqda`)
-}
+const person=new Person("Sardorbek",22)
+console.log(person.getAge);
+person.getAge=30
+console.log(person.getAge);
+person.getAge=-5
+console.log(person.getAge);
 
-const bmw = new Car("BMW", 120)
-const mers = new Car("Mers", 90)
-)
+
