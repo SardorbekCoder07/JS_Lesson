@@ -7,20 +7,31 @@
 // console.log(Number.isNaN(123))
 
 
-
-
-const userPrototype = {
-	sayHello() {
-		console.log(`Salom, mening ismim ${this.name}!`)
-	},
+function Car(make, speed) {
+	this.make = make
+	this.speed = speed
+}
+const car1 = new Car('BMW', 280)
+Car.prototype.accelarate = function () {
+	this.speed += 10
+	console.log(`${this.make} hozir ${this.speed} km/h da harakatlanmoqda`)
 }
 
-const user1 = Object.create(userPrototype, {
-	name: { value: "Ali", writable: false, enumerable: true },
-	age: { value: 25, writable: true, enumerable: true },
-})
-console.log(user1);
+Car.prototype.break = function () {
+	this.speed -= 5
+	console.log(`${this.make} hozirda ${this.speed} km/h da harakatlanmoqda`)
+}
 
-console.log(user1.name) // 👉 Ali
-console.log(user1.age) // 👉 25
-user1.sayHello() // 👉 Salom, mening ismim Ali!
+//voris sifatida constructor function yaratamiz
+
+function ElectricCar(make, speed, battery) {
+	Car.call(this, make, speed)
+	this.battery = battery
+}
+
+ElectricCar.prototype.chargeBattery = function (chargeTo) {
+	this.battery = chargeTo
+	console.log(`${this.make} batareykasi ${this.battery}% gacha quvvatlandi `)
+}
+const elec = new ElectricCar('BYD', 120, 80)
+ElectricCar.chargeBattery(100)
