@@ -9,15 +9,18 @@
 
 
 
-const carPrototype = {
-	start() {
-		console.log(`${this.brand} yurishni boshladi!`)
+const userPrototype = {
+	sayHello() {
+		console.log(`Salom, mening ismim ${this.name}!`)
 	},
 }
 
-const myCar = Object.create(carPrototype)
-console.log(myCar);
+const user1 = Object.create(userPrototype, {
+	name: { value: "Ali", writable: false, enumerable: true },
+	age: { value: 25, writable: true, enumerable: true },
+})
+console.log(user1);
 
-myCar.brand = "Tesla" 
-
-myCar.start() 
+console.log(user1.name) // 👉 Ali
+console.log(user1.age) // 👉 25
+user1.sayHello() // 👉 Salom, mening ismim Ali!
