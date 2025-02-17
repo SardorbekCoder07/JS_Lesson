@@ -1,5 +1,19 @@
 let date = new Date()
-date.setFullYear(2024)
-date.setMonth(5)
-date.setDate(15)
-console.log(date) 
+
+let shortDate = new Intl.DateTimeFormat('en-US', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric'
+}).format(date)
+console.log(shortDate)
+
+let yearOnly = new Intl.DateTimeFormat('en-US', {
+	year: 'numeric'
+}).format(date)
+console.log(yearOnly)
+
+let monthYear = new Intl.DateTimeFormat('en-US', {
+	year: 'numeric',
+	month: 'long'
+}).format(date)
+console.log(monthYear) 
