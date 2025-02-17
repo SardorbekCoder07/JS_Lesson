@@ -1,7 +1,5 @@
-console.log("Boshlanish...")
+let timeoutID = setTimeout(() => {
+	console.log("Bu xabar chiqmaydi!")
+}, 5000)
 
-setTimeout(() => {
-	console.log("3 sekund o'tdi!")
-}, 3000)
-
-console.log("Kutilmoqda...")
+clearTimeout(timeoutID)
