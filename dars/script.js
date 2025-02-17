@@ -1,2 +1,5 @@
-const date = new Date()
-console.log(date);
+let date = new Date()
+date.setFullYear(2024)
+date.setMonth(5)
+date.setDate(15)
+console.log(date) 
