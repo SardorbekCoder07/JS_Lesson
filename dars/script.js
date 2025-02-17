@@ -1,14 +1,15 @@
-const countDown = (seconds) => {
-	console.log(seconds);
-	
-	const interval = setInterval(() => {
-		seconds--
-		console.log(seconds)
-		if (seconds === 0) {
-			clearInterval(interval)
-			console.log("Time is up");
-			
-		}
-	}, 1000)
+const hours = document.getElementById('hour')
+const minutes = document.getElementById('minute')
+const seconds = document.getElementById('second')
+
+const clock = () => {
+	const date = new Date()
+	const hour = date.getHours()
+	const minute = date.getMinutes()
+	const second = date.getSeconds()
+
+	hour<10?hours.textContent="0"+hour:hours.textContent=hour
+	minute<10?minutes.textContent = "0" + minute : minutes.textContent = minute
+	second < 10 ? seconds.textContent = "0" + second : seconds.textContent = second
 }
-countDown(5)
+setInterval(clock, 1000)
