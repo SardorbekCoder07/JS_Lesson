@@ -1,19 +1,24 @@
 let date = new Date()
 
-let shortDate = new Intl.DateTimeFormat('en-US', {
-	year: 'numeric',
-	month: 'long',
-	day: 'numeric'
-}).format(date)
-console.log(shortDate)
+const formatDate = (localDate, current) => {
+	return new Intl.DateTimeFormat(current, {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit',
+		hour24: true
+	}).format(localDate)
+}
 
-let yearOnly = new Intl.DateTimeFormat('en-US', {
-	year: 'numeric'
-}).format(date)
-console.log(yearOnly)
-
-let monthYear = new Intl.DateTimeFormat('en-US', {
-	year: 'numeric',
-	month: 'long'
-}).format(date)
-console.log(monthYear) 
+let en=formatDate(date,'en-US')
+let ru=formatDate(date,'ru-RU')
+let uz=formatDate(date,'uz-UZ')
+let fr=formatDate(date,'fr-FR')
+let de=formatDate(date,'de-DE')
+console.log(en);
+console.log(ru);
+console.log(de);
+console.log(fr);
+console.log(uz);
