@@ -52,12 +52,20 @@ car.info.bind(onix)('Chevrolet','red') */
 
 
 
-let arr=[1,2,3,4,5]
+let arr = [1, 2, 3, 4, 5]
+//console.log(arr)
 
-function plusTo(arr,n){
+
+/* function plusTo(arr,n){
 	return arr.map(el=>{
 		return el+2
 	})
+} */
+Array.prototype.plusTo = function (n) {
+	return this.map(el => {
+		return el + 2
+	})
 }
 
-console.log(plusTo(arr,2))
+const a = arr.plusTo(2)
+console.log(a)
