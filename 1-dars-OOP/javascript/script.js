@@ -41,7 +41,7 @@ const sardor = new User("Sardorbek", 20)
 const bekzod = new User("Bekzod", 20)
 const ali = new User("Ali", 25) */
 
-function Car(brend="NO brend",model="NO model",year="NO year",color="NO color"){
+/* function Car(brend="NO brend",model="NO model",year="NO year",color="NO color"){
 	this.brend=brend
 	this.model=model
 	this.year=year
@@ -57,4 +57,17 @@ bmw.info()
 console.log(bmw);
 
 merc.info()
+ */
+
+function Person(name, age) {
+	this.name = name
+	this.age = age
+}
+Person.prototype.calcAge=function(){
+	console.log(`I was born in ${2025 - this.age} years`)
+}
+const person1 = new Person("Ali", 25)
+console.log(Person.prototype,person1);
+
+person1.calcAge()
 
