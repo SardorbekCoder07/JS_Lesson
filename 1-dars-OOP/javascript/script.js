@@ -59,7 +59,7 @@ console.log(bmw);
 merc.info()
  */
 
-function Person(name, age) {
+/* function Person(name, age) {
 	this.name = name
 	this.age = age
 }
@@ -69,5 +69,21 @@ Person.prototype.calcAge=function(){
 const person1 = new Person("Ali", 25)
 console.log(Person.prototype,person1);
 
-person1.calcAge()
+person1.calcAge() */
 
+function Person(name, age) {
+	this.name = name
+	this.age = age
+}
+function Child(name, age) {
+	this.name = name
+	this.age = age
+}
+Person.prototype.greet = function () {
+	console.log(`Salom, mening ismim ${this.name}!`)
+}
+
+const person1 = new Person("Ali", 25)
+const person2 = new Child("Vali", 30)
+console.log(person1.__proto__===Person.prototype)
+console.log(person2.__proto__===Child.prototype)
