@@ -106,9 +106,4 @@ const Car = function (make, speed) {
 const nexia2=new Car("Nexia 2",50)
 const nexia3=new Car("Nexia 3",60)
 nexia2.accelerate()
-nexia2.accelerate()
-nexia2.accelerate()
-nexia2.accelerate()
-nexia2.accelerate()
-
 nexia2.break()
