@@ -26,7 +26,7 @@ user3.greet()
  */
 
 //constructor function 
-const User = function (name, age) {
+/* const User = function (name, age) {
 	this.name = name
 	this.age = age
 	this.toast = function () {
@@ -39,6 +39,22 @@ const User = function (name, age) {
 
 const sardor = new User("Sardorbek", 20)
 const bekzod = new User("Bekzod", 20)
-const ali = new User("Ali", 25)
+const ali = new User("Ali", 25) */
 
+function Car(brend="NO brend",model="NO model",year="NO year",color="NO color"){
+	this.brend=brend
+	this.model=model
+	this.year=year
+	this.color=color
+	this.info=function(){
+		console.log(`Brend:${this.brend}\nModel: ${this.model}\nYear: ${this.year}\nColor: ${this.color}`)
+	}
+}
+
+const bmw=new Car()
+const merc=new Car("Mercedes","C300",2020,"white")
+bmw.info()
+console.log(bmw);
+
+merc.info()
 
