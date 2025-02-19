@@ -88,7 +88,7 @@ const person2 = new Child("Vali", 30)
 console.log(person1.__proto__===Person.prototype)
 console.log(person2.__proto__===Child.prototype) */
 
-const Car = function (make, speed) {
+/* const Car = function (make, speed) {
 	this.make = make
 	this.speed = speed
 
@@ -106,4 +106,4 @@ const Car = function (make, speed) {
 const nexia2=new Car("Nexia 2",50)
 const nexia3=new Car("Nexia 3",60)
 nexia2.accelerate()
-nexia2.break()
+nexia2.break() */
