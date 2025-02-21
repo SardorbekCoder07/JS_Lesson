@@ -40,7 +40,7 @@ console.log(bmw)
 
 //class usuli
 
-class Car {
+/* class Car {
 	constructor(make, speed) {
 		this.make = make
 		this.speed = speed
@@ -51,7 +51,7 @@ class Car {
 	}
 }
 const bmw = new Car("BMW", 200)
-console.log(bmw.accelarate());
+console.log(bmw.accelarate()); */
 
 
 
@@ -128,7 +128,7 @@ console.log(user.password)
 user.password = "123"
 user.password = "yangiParol" // */
 
-class MathHelper {
+/* class MathHelper {
 	static square(num) {
 		return num * num
 	}
@@ -137,5 +137,14 @@ class MathHelper {
 console.log(MathHelper.square(5))
 console.log(MathHelper.square(10));
 console.log(MathHelper);
+ */
 
 
+class Validator {
+	static isPhoneNumberValid(phone) {
+		return /^\+998\d{9}$/.test(phone)
+	}
+}
+
+console.log(Validator.isPhoneNumberValid("+998901234567"))
+console.log(Validator.isPhoneNumberValid("12345")) 
