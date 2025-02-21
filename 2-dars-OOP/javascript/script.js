@@ -147,4 +147,23 @@ class Validator {
 }
 
 console.log(Validator.isPhoneNumberValid("+998901234567"))
-console.log(Validator.isPhoneNumberValid("12345")) 
+console.log(Validator.isPhoneNumberValid("12345"))
+
+
+class User {
+	constructor(name, age) {
+		this.name = name
+		this.age = age
+	}
+
+	static fromJSON(json) {
+		const data = JSON.parse(json)
+		return new User(data.name, data.age)
+	}
+}
+
+const jsonUser = JSON.stringify({ name: "Ali", age: 25 })
+const jsonUser2 = JSON.stringify({ name: "Vali", age: 48 })
+const user = User.fromJSON(jsonUser)
+const user2 = User.fromJSON(jsonUser2)
+console.log(user, user2) 
