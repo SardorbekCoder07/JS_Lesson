@@ -53,3 +53,25 @@ console.log(bmw)
 const bmw = new Car("BMW", 200)
 console.log(bmw);
  */
+
+
+class Laptop{
+	constructor(price,model,year){
+		this.model=model
+		this.price=price
+		this._year=year
+	}
+	get getLaptopProperty(){
+		return console.log(`Year:${this._year}`)
+	}
+
+	set getLaptopProperty(year){
+		this._year=year
+		return console.log(`Year changed ${this._year}`)
+	}
+}
+
+const hp=new Laptop(1200,"HP",2020)
+hp.getLaptopProperty
+hp.getLaptopProperty=3000
+hp.getLaptopProperty
