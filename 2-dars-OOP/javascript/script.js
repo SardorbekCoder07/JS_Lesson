@@ -21,11 +21,16 @@ mike.introduce() */
 
 
 /* Object.create() */
-const person={
-	greet:function(){
-		console.log("Hello")
-	}
+const person = {
+	greet: function () {
+		console.log(`Salom, mening ismim ${this.name}`)
+	},
 }
-const student={}
-student.__proto__=person
-student.greet()
+
+const student = Object.create(person, {
+	name: { value: "Sardorbek", writable: true },
+	course: { value: "Front-end", writable: true },
+})
+
+student.greet() 
+console.log(student) 
