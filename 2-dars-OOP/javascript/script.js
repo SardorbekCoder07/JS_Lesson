@@ -1,5 +1,5 @@
 //Inheritance Between "Classes":Constructor functions 
-const Person = function (firtstName, birthYear) {
+/* const Person = function (firtstName, birthYear) {
 	this.firtstName = firtstName
 	this.birthYear = birthYear
 }//father constructor
@@ -17,4 +17,15 @@ Student.prototype.introduce=function(){
 }
 const mike=new Student("Mike",2000,"Computer Science")
 console.log(mike);
-mike.introduce()
+mike.introduce() */
+
+
+/* Object.create() */
+const person={
+	greet:function(){
+		console.log("Hello")
+	}
+}
+const student={}
+student.__proto__=person
+student.greet()
