@@ -21,7 +21,7 @@ mike.introduce() */
 
 
 /* Object.create() */
-const person = {
+/* const person = {
 	greet: function () {
 		console.log(`Salom, mening ismim ${this.name}`)
 	},
@@ -33,4 +33,9 @@ const student = Object.create(person, {
 })
 
 student.greet() 
-console.log(student) 
+console.log(student)  */
+
+
+// 1️⃣ Parent class (Constructor Function) - Car
+
+
