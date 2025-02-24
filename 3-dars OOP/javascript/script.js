@@ -41,7 +41,7 @@ student1.sayHello()
 other1.calcAGe() */
 
 
-const Car = function (make, speed) {
+/* const Car = function (make, speed) {
 	this.make = make
 	this.speed = speed
 }
@@ -74,4 +74,4 @@ byd.accelarate()
 byd.accelarate()
 byd.accelarate()
 byd.chargeBattery(15)
-byd.accelarate()
+byd.accelarate() */
