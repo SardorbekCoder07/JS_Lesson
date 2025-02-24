@@ -2,12 +2,14 @@
 
 const person = {
 	greet: function () {
-		console.log("Hello")
-	}
+		console.log(`Salom, mening ismim ${this.name}`)
+	},
 }
-const student = Object.create(person,{
-	name:'Sardorbek',
-	age:20
+
+const student = Object.create(person, {
+	name: { value: "Sardorbek", writable: true },
+	course: { value: "Front-end", writable: true },
 })
 
-console.log(student);
+student.greet()
+console.log(student)
