@@ -1,6 +1,6 @@
 //Object create() inheritance 
 
-const Teacher = function (name, age) {
+/* const Teacher = function (name, age) {
 	this.name = name
 	this.age = age
 }
@@ -38,4 +38,40 @@ console.log(student1)
 student1.calcAGe()
 student2.calcAGe()
 student1.sayHello()
-other1.calcAGe()
+other1.calcAGe() */
+
+
+const Car = function (make, speed) {
+	this.make = make
+	this.speed = speed
+}
+Car.prototype.break = function () {
+	this.speed -= 10
+	console.log(`${this.make} endi ${this.speed} km/h da harakatlanmoqda!`)
+}
+
+const EV = function (make, speed, charge) {
+	Car.call(this, make, speed)
+	this.charge = charge
+}
+EV.prototype = Object.create(Car.prototype)
+EV.prototype.chargeBattery = function (chargeTo) {
+	this.charge = chargeTo
+	console.log(`${this.make} quvvatlandi:${this.charge}%`)
+}
+
+EV.prototype.accelarate = function () {
+	if (this.charge > 0) {
+		this.charge--
+		this.speed += 20
+		console.log(`${this.make} endi ${this.speed} km/h da harakatlanmoqda. Quvvati:${this.charge}%`)
+	} else {
+		console.log(`Mashinani quvvatlang`)
+	}
+}
+const byd = new EV("Build Your Dreams", 180, 3)
+byd.accelarate()
+byd.accelarate()
+byd.accelarate()
+byd.chargeBattery(15)
+byd.accelarate()
