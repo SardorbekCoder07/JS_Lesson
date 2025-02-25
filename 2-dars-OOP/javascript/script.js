@@ -37,5 +37,17 @@ console.log(student)  */
 
 
 // 1️⃣ Parent class (Constructor Function) - Car
+const Car = function (make, speed) {
+	this.make = make
+	this.speed = speed
+}
+
+const bmw = new Car("BMW", 120)
+const mercedes = new Car("Mercedes", 95)
+
+console.log(bmw)
+console.log(mercedes);
+
+
 
 

@@ -75,3 +75,49 @@ byd.accelarate()
 byd.accelarate()
 byd.chargeBattery(15)
 byd.accelarate() */
+
+
+/* Inheritance Classes */
+class Payment {
+	constructor(amount) {
+		this.amount = amount
+	}
+
+	proccesPayment() {
+		console.log(`${this.amount} miqodorda to'lov amalga oshirildi`)
+	}
+}
+
+/* Ota class Paymentdan bola classga meros beramiz  */
+class CashPayment extends Payment {
+	proccesPayment() {
+		console.log(`${this.amount} naqd pul orqali to'landi.`)
+	}
+}
+
+class CardPayment extends Payment {
+	constructor(amount, cardNumber) {
+		super(amount)
+		this.cardNumber = cardNumber
+	}
+	proccesPayment() {
+		console.log(`${this.amount} karta orqali to'landi  (XXXX-XXXX-XXXX-${this.cardNumber.slice(-4)}).`)
+	}
+}
+
+class CryptoPayment extends Payment {
+	constructor(amount, walletAdress) {
+		super(amount)
+		this.walletAdress = walletAdress
+	}
+
+	proccesPayment() {
+		console.log(`${this.amount} kriptovalyuta orqali to'landi  ${this.walletAdress}.`)
+	}
+}
+
+
+let cash = new CashPayment(100)
+const card = new CardPayment(250, "1234567812345678")
+const crypto = new CryptoPayment(500, "1A2b3C4d5E6f7G8h9I")
+console.log(cash,card,crypto)
