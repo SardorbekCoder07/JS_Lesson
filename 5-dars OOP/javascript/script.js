@@ -22,7 +22,7 @@ const phone=Object.create(Product)
 phone.init('Iphone 15',1000,'Apple')
 phone.getInfo() */
 /* another class */
-class Account {
+/* class Account {
 	constructor(owner, currency, pin) {
 		this.owner = owner
 		this.currency = currency
@@ -49,7 +49,7 @@ class Account {
 	}
 }
 const acc1 = new Account("Sardorbek", "USD", 1111)
-console.log(acc1);
+console.log(acc1); */
 
 
 
