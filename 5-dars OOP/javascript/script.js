@@ -51,6 +51,35 @@ phone.getInfo() */
 const acc1 = new Account("Sardorbek", "USD", 1111)
 console.log(acc1); */
 
+/* inheretance object create */
+const PersoProto = {
+	init(name, age) {
+		this.name = name
+		this.age = age
+	},
+	calcAge() {
+		console.log(2025 - this.age)
+	}
+}
+// const student=Object.create(PersoProto)
+
+const StudentProto = {
+	init(name, age, course) {
+		PersoProto.init.call(this, name, age)
+		this.course = course
+	},
+
+	getInfo() {
+		console.log(`${this.name} student learning ${this.course}`)
+
+	},
+	calcYear() {
+		PersoProto.calcAge.call(this)
+	}
+}
+const student1 = Object.create(StudentProto)
+student1.init('Sardorbek',22,'Math')
+student1.calcYear()
 
 
 
