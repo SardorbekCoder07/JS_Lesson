@@ -52,7 +52,7 @@ const acc1 = new Account("Sardorbek", "USD", 1111)
 console.log(acc1); */
 
 /* inheretance object create */
-const PersoProto = {
+/* const PersoProto = {
 	init(name, age) {
 		this.name = name
 		this.age = age
@@ -79,8 +79,35 @@ const StudentProto = {
 }
 const student1 = Object.create(StudentProto)
 student1.init('Sardorbek',22,'Math')
-student1.calcYear()
+student1.calcYear() */
+
+const Product = {
+	initt(name, price) {
+		this.name = name
+		this.price = price
+	},
+	getInfo() {
+		return `${this.name} narxi ${this.price}$`
+	}
+}
+
+const ElectronicProduct = Object.create(Product)
 
 
+ElectronicProduct.initElectronic = function (name, price, brand) {
+	this.initt(name, price)
+	this.brand = brand
+}
+
+ElectronicProduct.getWarranty = function () {
+	return `${this.name} brendi: ${this.brand}, 1 yil kafolat bilan`
+}
+
+
+const phone = Object.create(ElectronicProduct)
+phone.initElectronic('iPhone 15', 12000000, 'Apple')
+
+console.log(phone.getInfo())
+console.log(phone.getWarranty());
 
 
