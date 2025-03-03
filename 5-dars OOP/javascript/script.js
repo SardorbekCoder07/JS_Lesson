@@ -80,7 +80,7 @@ const StudentProto = {
 const student1 = Object.create(StudentProto)
 student1.init('Sardorbek',22,'Math')
 student1.calcYear() */
-
+/* 
 const Product = {
 	initt(name, price) {
 		this.name = name
@@ -109,5 +109,55 @@ phone.initElectronic('iPhone 15', 12000000, 'Apple')
 
 console.log(phone.getInfo())
 console.log(phone.getWarranty());
+ */
+const input = document.getElementById('input')
+const depositBtn = document.getElementById('deposit')
+const withdrawbtn = document.getElementById('withdraw')
+
+class Account {
+	constructor(owner, currrency, pin, balance) {
+		this.owner = owner
+		this.currrency = currrency
+		this.pin = pin
+		this.balance = balance
+		this.movements = []
+	}
+
+	deposit(amount) {
+		this.balance += amount
+		this.movements.push(amount)
+	}
+
+	withdraw(amount) {
+		if (amount > this.balance) {
+			console.log('You have not enough money')
+		} else {
+			this.balance -= amount
+			this.movements.push(-amount)
+		}
+	}
+}
 
 
+const account1 = new Account('Sardorbek', 'USD', 1111, 1000)
+
+let info
+
+
+depositBtn.addEventListener('click', function () {
+	account1.deposit(Number(input.value))
+	info = account1.movements.filter((item) => {
+		return item > 0
+	})
+	console.log(info)
+
+})
+
+
+withdrawbtn.addEventListener('click', function () {
+	account1.withdraw(Number(input.value))
+	info = account1.movements.filter((item) => {
+		return item < 0
+	})
+	console.log(info)
+})
